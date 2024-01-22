@@ -2,6 +2,10 @@
 
     /* ---- HOMEPAGE ---- */
 
+    div#home-area {
+        padding-bottom: 100%;
+    }
+
     div#home-area h1.nome {
         font-size: 50px;
         
@@ -19,12 +23,6 @@
     img#ilustracao-homepage {
         width: 350px;
     }
-
-    /* ---- PROJETOS ---- */
-
-    
-
-
 
 }
 
