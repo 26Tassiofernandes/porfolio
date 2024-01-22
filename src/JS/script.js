@@ -15,3 +15,23 @@ function typeWrite(elemento){
 const titulo = document.querySelector('.descricao-profissao');
 typeWrite(titulo);
 
+
+// Mexendo com o Navbar
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Obtém todos os links da barra de navegação
+  var navLinks = document.querySelectorAll(".nav-item.nav-link");
+
+  // Adiciona um ouvinte de eventos a cada link
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      
+      // Fecha o menu de navegação ao clicar em um link
+      var navbarToggler = document.getElementById("botao-navbar");
+      if (navbarToggler) {
+        navbarToggler.click();
+      }
+    });
+  });
+});
