@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tássio Fernandes</title>
+    <link rel="shortcut icon" href="src/images/icon-code.png" type="image/x-icon">
+
+    <!--Bootstrap, copiamos isso e os scripts abaixo do site oficial do bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <!--Script do Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+    <!--Script do popper-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+
+    <!--Script do Font Awesome.com pego na aba kits (usado pra colocar ícones no site)-->
+
+    <script src="https://kit.fontawesome.com/13c5f106a6.js" crossorigin="anonymous"></script>
+
+    <!--Jquery-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!--Um dos pré-requisitos do Bootstrap é o Jquery que é uma biblioteca do JavaScript que torna essa linguagem de programação mais concisa e simples de escrever e compreender, como estamos na versão 5 do bootstrap ele não é mais usado-->
+
+    <!--O popper.js é uma biblioteca JavaScript que tem a função de posicionar elementos como menus, tooltips e popovers-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+    <link rel="stylesheet" href="src/CSS/style.css">
+    <link rel="stylesheet" href="src/CSS/reset.css">
+    <link rel="stylesheet" href="src/CSS/rolagem.css">
+    <link rel="stylesheet" href="src/CSS/responsivo.css">
+
+</head>
+
+<body>
+
+    <!---------- CABEÇALHO/NAVBAR -------->
+
+    <header>
+
+        <div class="container" id="nav-container">
+
+            <nav class="navbar navbar-expand-lg fixed-top">
+
+                <a href="#" class="navbar-brand" id="link-brand">
+
+                    <img src="src/images/logo-image.png" alt="logo principal do site" id="logo">
+                    <p id="titulo-principal"><strong>Tássio</strong></p>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation" id="botao-navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+
+                    <a href="#" class="nav-item nav-link" id="home-menu">Início</a>
+                    <a href="#sobre-mim-area" class="nav-item nav-link" id="sobre-mim">Sobre mim</a>
+                    <a href="#skills-area" class="nav-item nav-link" id="skills">Skills</a>
+                    <a href="#experiencia-area" class="nav-item nav-link" id="experiencia">Experiência</a>
+                    <a href="#projetos-area" class="nav-item nav-link" id="projetos">Projetos</a>
+                    <a href="#contato-area" class="nav-item nav-link" id="contato">Contato</a>
+
+
+                </div>
+
+            </nav>
+
+        </div>
+
+
+    </header>
+
+    <!---------- HOMEPAGE -------->
+
+    <div id="home-area">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <h1 class="nome">Tássio Fernandes</h1>
+                    <p class="descricao-profissao">Desenvolvedor Web</p>
+                    <ul class="lista-redes-sociais">
+
+                        <abbr title="Linkedin">
+
+                            <li><a href="https://www.linkedin.com/in/tassiofernandes26/" target="_blank"
+                                    rel="external"><img src="src/images/linkedin-logo.png"
+                                        alt="logo da rede social linkedin"></img></a></li>
+
+                        </abbr>
+
+                        <abbr title="Github">
+                            <li><a href="https://github.com/26Tassiofernandes" target="_blank" rel="external"><img
+                                        style="filter: invert(1);" src="src/images/github-logo.svg"
+                                        alt="logo da rede social github"></img></a></li>
+                        </abbr>
+
+                        <abbr title="Instagram">
+                            <li><a href="https://instagram.com/26tassio" target="_blank" rel="external"><img
+                                        src="src/images/instagram-logo.svg"
+                                        alt="logo da rede social instagram"></img></a></li>
+                        </abbr>
+
+
+                    </ul>
+
+                    <div class="botao-baixar-cv">
+
+                        <a download href="src/arquivos/curriculo.pdf" class="btn btn-primary">Baixar CV</a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <img id="ilustracao-homepage" src="src/images/ilustracao.svg"
+                        alt="Personagem da imagem da homepage na mesa">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!------------ SOBRE MIM --------------->
+
+    <div id="sobre-mim-area">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <img class="img-fluid" style="height: 100%;" src="src/images/ilustracao-sobre-mim.svg"
+                        alt="Ilustração de um personagem programando">
+
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="about-title">Sobre mim</h3>
+                    <p class="descricao">Sou um estudante de Bacharelado em Ciência da Computação na Universidade
+                        Federal do Amapá (Unifap) e também estagiário de Sistemas no Tribunal de Justiça do Estado do
+                        Amapá (TJAP). Tenho um grande interesse pela área de programação, construção de softwares e
+                        Desenvolvimento Web.</p>
+                    <p class="descricao">Como um entusiasta de programação, estou sempre aberto a aprender novas
+                        linguagens e ferramentas, mas atualmente estou focado em aprimorar minhas habilidades em Python,
+                        Java, JavaScript, TypeScript, Bootstrap, Flask e Banco de dados. Além disso, estudo linguagens
+                        de Desenvolvimento Web, como HTML5 e CSS3.</p>
+                    <p class="descricao">Estou empolgado para compartilhar meu conhecimento e experiência com todos
+                        vocês. Vamos juntos explorar o mundo da tecnologia e alcançar grandes realizações!</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!------- MINHAS SKILLS ------>
+
+    <div id="skills-area">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+
+                    <h3 class="skills-title"><strong>Minhas Skills</strong></h3>
+
+                </div>
+
+                <!--- PYTHON --->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="fab fa-python" class="icones-tecnologias">
+
+                        <h4>Python</h4>
+                        <p>Linguagem versátil e fácil de aprender, amplamente utilizada em desenvolvimento web,
+                            automação e inteligência artificial.</p>
+
+                    </i>
+
+                </div>
+
+                <!--- HTML5 --->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="fab fa-html5">
+
+                        <h4>HTML5</h4>
+                        <p>Linguagem de marcação fundamental para estruturar conteúdo em páginas web e deixá-las
+                            interativas e responsivas.</p>
+
+                    </i>
+
+                </div>
+
+                <!--- CSS3 --->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="fab fa-css3">
+
+                        <h4>CSS3</h4>
+                        <p>Responsável pela estilização e apresentação visual em páginas web, proporcionando uma
+                            experiência visual atraente aos usuários.</p>
+
+                    </i>
+
+                </div>
+
+
+                <!--- JAVASCRIPT--->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="fab fa-js-square">
+
+                        <h4>JavaScript</h4>
+                        <p>É uma linguagem de programação do lado do cliente amplamente usada para tornar as páginas web
+                            interativas.</p>
+
+                    </i>
+
+                </div>
+
+
+                <!--- JAVA --->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="fab fa-java">
+
+                        <h4>Java</h4>
+                        <p>Linguagem orientada a objetos, conhecida por sua portabilidade e ampla aplicação em
+                            desenvolvimento empresarial e móvel.</p>
+
+                    </i>
+
+                </div>
+
+
+                <!-- BOOTSTRAP --->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="fab fa-bootstrap">
+
+                        <h4>Bootstrap</h4>
+                        <p>Frameworkd front-end usado para o desenvolvimento de designs atraentes e responsivos para
+                            sites e aplicativos web. </p>
+
+                    </i>
+
+                </div>
+
+                <!-- BANCO DE DADOS -->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="fas fa-database">
+
+                        <h4>Banco de dados</h4>
+                        <p>Bancos de dados são essenciais para armazenar, organizar e recuperar informações, permitindo
+                            a manipulação eficiente de dados em aplicações.</p>
+
+                    </i>
+
+                </div>
+
+                <!--GITHUB-->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="fab fa-github">
+
+                        <h4>Github</h4>
+                        <p>GitHub é uma plataforma de hospedagem de código-fonte que facilita o trabalho colaborativo em
+                            projetos de desenvolvimento de software.</p>
+
+                    </i>
+
+                </div>
+
+                <!-- GIT-->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="fab fa-git-alt">
+
+                        <h4>Git</h4>
+                        <p>Sistema de controle de versão distribuído, usado para rastrear alterações no código-fonte
+                            durante o desenvolvimento de software.</p>
+
+                    </i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!------- EXPERIÊNCIA ------>
+
+    <div id="experiencia-area">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <img class="img-fluid" style="height: 100%; margin-bottom: 100px; width: 480px;"
+                        src="src/images/img-experiencia.svg" alt="Ilustração de um personagem com curriculo na mão">
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <!-- TJAP -->
+
+                            <h3 class="experiencia-title"><strong>Experiência</strong></h3>
+                            <li class="card-text"><i class="fas fa-check"></i><strong>2023 - Presente</strong></li>
+                            <p class="descricao-experiencia"
+                                style="padding-left: 10px; text-decoration: underline; cursor: pointer; font-size: 18px;">
+                                Tribunal de Justiça do Estado do Amapá</p>
+                            <p class="descricao-experiencia" style="padding-left: 10px;">- <strong>Função</strong>: Atua
+                                como Estagiário de Desenvolvimento Web no Tribunal de Justiça do Estado do Amapá,
+                                promovendo soluções tecnológicas voltadas às demandas da empresa.</p>
+                            <p class="descricao-experiencia" style="padding-left: 10px;">-
+                                <strong>Competências</strong>: API REST · JPA (Java Persistence API) · Postman API ·
+                                Algoritmos · Programação (computação) · SQL · Java · Banco de dados
+                            </p>
+                            <br>
+
+                            <!-- UNIFAP -->
+
+                            <li class="card-text"><i class="fas fa-check"></i><strong>2021 - Presente</strong></li>
+                            <p class="descricao-experiencia"
+                                style="padding-left: 10px; text-decoration: underline; cursor: pointer; font-size: 18px;">
+                                Universidade Federal do Amapá</p>
+                            <p class="descricao-experiencia" style="padding-left: 10px;">- <strong>Função</strong>: Atua
+                                como estudante de Bacharelado em Ciência da Computação na Unifap, atualmente está no 8°
+                                semestre.</p>
+                            <p class="descricao-experiencia" style="padding-left: 10px;">-
+                                <strong>Competências</strong>: Programação · Desenvolvimento de Software · Banco de
+                                Dados · Redes de Computadores · Sistemas Operacionais · IA e Machine Learning ·
+                                Computação em Nuvem · Gerenciamento de Projetos
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!------- PROJETOS ------>
+
+    <div id="projetos-area">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <h3 class="projetos-title" style="text-align: center;"><strong>Projetos</strong></h3>
+
+                </div>
+
+                <!----- PRIMEIRO CARD / PLANTEL LIVERPOOL ----->
+
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <img src="src/images/imagem-plantel-liverpool.png" alt="Primeiro card" class="card-img-top">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Plantel Liverpool</h5> <br>
+
+                            <!-- Botão de Colapso -->
+
+                           
+                            <a href="https://github.com/26Tassiofernandes/plantelliverpool" target="_blank" rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-1" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+
+                            <!-- Conteúdo colapsado -->
+
+                            <div class="collapse" id="descricao-card-1"> <br>
+
+                                <p class="card-text">O projeto compreende uma interface conectada a um banco de dados com informações sobre o elenco do Liverpool FC. Ela oferece recursos para adicionar, listar, deletar e pesquisar jogadores, seguindo os princípios de CRUD.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!----- SEGUNDO CARD / PROJETO TERROR ----->
+
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <img src="src/images/projeto-terror.png" alt="Primeiro card" class="card-img-top" class="img-fluid">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Projeto terror</h5> <br>
+
+                            <!-- Botão de Colapso -->
+
+                            <a href="https://26tassiofernandes.github.io/projeto-terror/" target="_blank" rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-2" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+                            
+                            <!-- Conteúdo colapsado -->
+
+                            <div class="collapse" id="descricao-card-2"> <br>
+
+                                <p class="card-text">O projeto de terror apresenta uma interface envolvente, destacando
+                                    os principais personagens fictícios do cinema nesse gênero. O usuário pode escolher
+                                    seus personagens favoritos por meio de botões intuitivos e dinâmicos.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!---- TERCEIRO CARD / TELA DE LOGIN ---->
+
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <img src="src/images/tela-login-animada.png" alt="Terceiro card" class="card-img-top">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Tela de login</h5> <br>
+
+                            <!-- Botão de Colapso -->
+
+                            <a href="https://26tassiofernandes.github.io/tela-login-animada/" target="_blank" rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-3" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+
+                            <!-- Conteúdo colapsado -->
+
+                            <div class="collapse" id="descricao-card-3"> <br>
+
+                                <p class="card-text">É uma tela interativa para login e cadastro, incorporando animações suaves e um layout adaptável. Proporciona uma experiência dinâmica e fácil de usar, visando a praticidade e a modernidade.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!---- QUARTO CARD / PROJETO X-MEN ---->
+
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <img src="src/images/projeto-xmen.png" alt="Quarto card" class="card-img-top">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Projeto X-men</h5> <br>
+
+                            <!-- Botão de Colapso -->
+
+                            <a href="https://26tassiofernandes.github.io/projeto-x-men/" target="_blank" rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-4" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+
+                            <!-- Conteúdo colapsado -->
+
+                            <div class="collapse" id="descricao-card-4"> <br>
+
+                                <p class="card-text">Uma interface interativa e dinâmica, o projeto busca a seleção de personagens do X-men, cada um acompanhado por imagem e descrição.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!---- QUINTO CARD / MINI PORTFÓLIO ---->
+
+                <div class="col-md-3">
+                    <div class="card">
+
+                        <img src="src/images/mini-portfolio.png" alt="Quinto card" class="card-img-top">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Mini porfólio</h5> <br>
+
+                            <!-- Botão de Colapso -->
+
+                            <a href="https://26tassiofernandes.github.io/mini-portfolio/" target="_blank" rel="external"
+                                class="btn btn-primary" style="width:100%">Visitar</a> <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-5" role="button"
+                                aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+
+                            <!-- Conteúdo colapsado -->
+
+                            <div class="collapse" id="descricao-card-5"> <br>
+
+                                <p class="card-text">Mini portfólio apresenta uma interface encantadora e responsiva, integrando sutis detalhes de pixel art para uma experiência visual única e atraente. Descubra meu trabalho de forma envolvente.</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!---- SEXTO CARD /  PROJETO CORDEL ---->
+
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <img src="src/images/projeto-cordel.png" alt="Sexto card" class="card-img-top">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Projeto Cordel</h5> <br>
+
+                            <!-- Botão de Colapso -->
+
+                            <a href="https://26tassiofernandes.github.io/projeto-cordel/" target="_blank" rel="external"
+                                class="btn btn-primary" style="width: 100%;">Visitar</a> <br> <br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-6" role="button"
+                                aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+
+                            <!-- Conteúdo colapsado -->
+
+                            <div class="collapse" id="descricao-card-6"> <br>
+
+                                <p class="card-text">Projeto poético inspirado na canção 'A Vida de um Viajante' de Luiz Gonzaga, apresentando versos em estilo cordel. A experiência é aprimorada por um efeito parallax envolvente.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!---- SÉTIMO CARD / CALCULADORA DE IMC---->
+
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <img src="src/images/calculadora-imc.png" alt="Sétimo card" class="card-img-top">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Calculadora de IMC</h5> <br>
+
+                            <!-- Botão de Colapso -->
+
+                            <a href="https://26tassiofernandes.github.io/Calculador-de-IMC/imc.html" target="_blank" rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-7" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+
+                            <!-- Conteúdo colapsado -->
+
+                            <div class="collapse" id="descricao-card-7"> <br>
+
+                                <p class="card-text">Calculadora de IMC, desenvolvida em HTML, CSS e JS, permite aos usuários inserir altura e peso para calcular o índice de massa corporal, proporcionando uma abordagem simples e eficaz.</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!---- OITAVO CARD / CONTADOR ---->
+
+                <div class="col-md-3">
+
+                    <div class="card">
+
+                        <img src="src/images/contador.png" alt="Oitavo card" class="card-img-top">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Contador</h5> <br>
+
+                            <!-- Botão de Colapso -->
+
+                            <a href="https://26tassiofernandes.github.io/Contador/contador.html" target="_blank" rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-8" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+                                
+                            <!-- Conteúdo colapsado -->
+
+                            <div class="collapse" id="descricao-card-8"> <br>
+
+                                <p class="card-text">Contador simples que exibe valores positivos e negativos em resposta a eventos de usuário, proporcionando uma experiência interativa e dinâmica.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!------- CONTATO ------>
+
+    <div id="contato-area">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <h3 class="contato-title" style="text-align: center; margin-bottom: 60px;"><strong>Contato</strong>
+                    </h3>
+
+                </div>
+
+                <div class="col-md-6">
+                    <!-- A classe img-fluid deixa a imagem responsiva e adaptável para diferentes tipos de tela -->
+                    <img class="img-fluid" style="margin-bottom: 60px; width: 450px;" src="src/images/contato-img.svg"
+                        alt="Imagem ilustrativa de contato">
+
+
+                </div>
+
+                <!-- CONSTRUINDO O FORMULÁRIO -->
+
+                <div class="col-md-6">
+
+                    <!-- Usei o  Formspree como serviço de formulário de email -->
+
+                    <form action="https://formspree.io/f/xjvnkqlq" method="POST">
+                        <!-- Esse action é usado pra enviar email das pessoas pro meu. O método "POST" é necessário para enviar dados do formulário de maneira segura -->
+
+                        <div class="form-group"> <!-- NOME -->
+
+                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome"
+                                required>
+
+                        </div> <br>
+
+                        <div class="form-group"> <!-- Email -->
+
+                            <input type="text" class="form-control" name="email" id="email" placeholder="Seu e-mail"
+                                required>
+
+                        </div> <br>
+
+                        <div class="form-group"> <!-- Mensagem -->
+
+                            <textarea class="form-control" name="mensagem" id="mensagem" rows="5"
+                                placeholder="Digite sua mensagem" required></textarea>
+
+                        </div> <br>
+
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!------- FOOTER / RODAPÉ ------>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <ul class="lista-redes-sociais">
+
+                <abbr title="Linkedin">
+
+                    <li><a href="https://www.linkedin.com/in/tassiofernandes26/" target="_blank"
+                            rel="external"><img src="src/images/linkedin-logo.png"
+                                alt="logo da rede social linkedin"></img></a></li>
+
+                </abbr>
+
+                <abbr title="Github">
+                    <li><a href="https://github.com/26Tassiofernandes" target="_blank" rel="external"><img
+                                style="filter: invert(1);" src="src/images/github-logo.svg"
+                                alt="logo da rede social github"></img></a></li>
+                </abbr>
+
+                <abbr title="Instagram">
+                    <li><a href="https://instagram.com/26tassio" target="_blank" rel="external"><img
+                                src="src/images/instagram-logo.svg"
+                                alt="logo da rede social instagram"></img></a></li>
+                </abbr>
+
+
+            </ul>
+
+        <div class="informacoes-copyright">
+
+            <p class="descricao-footer" style="text-align: center;">Copyright © 2024, Tássio Fernandes. All Rights Reserved</p>
+
+        </div>
+            
+            
+        </div>
+
+    </footer>
+
+
+    <script src="src/JS/script.js"></script>
+
+</body>
+
+</html>

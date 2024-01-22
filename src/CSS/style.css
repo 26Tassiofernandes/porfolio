@@ -1,0 +1,330 @@
+/*-------- HEADER/CABEÇALHO --------*/
+
+header {
+    margin-bottom: 12vh;
+}
+
+header nav.navbar {
+    background-color: #1C3C5E;
+    
+}
+
+header nav a#link-brand {
+    display: flex;
+    cursor: default;
+    margin-left: 8px;
+}
+
+header nav a p#titulo-principal {
+    color: white;
+    font-size: 27px;
+    margin: auto;
+    position: relative;
+    left: 5px;
+}
+
+header div#nav-container {
+    padding: 0;
+}
+
+nav img { /*Imagem do logo*/
+    width: 90px;
+    padding: 10px;
+    filter: invert(1);
+    
+}
+
+button#botao-navbar { /*Botão do menú quando fica em tela menor*/
+    position: relative;
+    right: 10px;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+button#botao-navbar:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+div#navbar-links {
+    padding-right: 100px;
+
+}
+
+div#navbar-links a {
+    color: white;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    
+    
+}
+
+div#navbar-links a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #061323;
+    
+}
+
+/*-------- CONTEÚDO HOMEPAGE --------*/
+
+div#home-area {
+    padding: 150px 0 100px;
+}
+
+div#home-area h1.nome {
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+div#home-area p.descricao-profissao {
+    font-size: 38px;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+div#home-area p.descricao-profissao::after { /*Efeito de máquina de escrever*/
+    content: '|';
+    animation: piscar .7s infinite;
+}
+
+@keyframes piscar {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+div#home-area ul.lista-redes-sociais {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+
+}
+
+div#home-area ul.lista-redes-sociais img {
+    width: 40px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+div#home-area ul.lista-redes-sociais img:hover {
+    transform: translateY(-7px); /*Os elementos vão suavemente para cima*/
+}
+
+div#home-area .botao-baixar-cv {
+    margin-top: 20px;    
+    font-variant: small-caps;
+    
+}
+
+div#home-area .botao-baixar-cv a {
+    width: 35%;
+    font-size: 25px;
+    border-radius: 30px;
+    
+}
+
+img#ilustracao-homepage {
+    width: 400px;
+}
+
+/*-------- SOBRE MIM --------*/
+
+div#sobre-mim-area {
+    background-color: white;
+    padding: 150px 0 200px; /* padding-top, padding-right | padding-left, padding-bottom, respectivamente */
+}
+
+div h3.about-title { /*Título*/
+    color: #061323;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+div p.descricao { /* Minha descrição */
+    font-size: 17px;
+    font-weight: normal;
+    color: #061323;
+}
+
+/*-------- MINHAS SKILLS --------*/
+
+div#skills-area {
+    padding: 150px 0 100px;
+}
+
+div#skills-area h3.skills-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+div.col-md-4.service-box i.fab, div.col-md-4.service-box i.fas { /*ícones dos cursos*/
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+    transition: all .5s;
+    color: white;
+}
+
+div i.fab h4, div i.fas h4 { /*Título dos cursos*/
+    font-family: 'Saira Condensed', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    justify-content: left;
+}
+
+div.col-md-4.service-box i.fab:hover, div.col-md-4.service-box i.fas:hover, div.col-md-4.service-box i.fab h4:hover {
+    color: #34a0d6;
+    transition: all .5s;
+}
+
+div.col-md-4.service-box i.fab p, div.col-md-4.service-box i.fas p {
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*-------- EXPERIÊNCIA --------*/
+
+div#experiencia-area {
+    background-color: white;
+    padding: 150px 0 100px;
+    
+}
+
+h3.experiencia-title  {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+div#experiencia-area .card {
+    background-color: #061323;
+    padding: 30px;
+    border-radius:30px;
+}
+
+li.card-text {
+    font-size: 17px;
+    font-weight: normal;
+    color: white;
+    
+}
+
+p.descricao-experiencia {
+    font-weight: 400;
+    color: rgba(240, 232, 232, 0.986);
+}
+
+i.fas.fa-check {
+    color: rgb(4, 179, 4);
+    padding: 10px;
+    
+}
+
+/*-------- PROJETOS --------*/
+
+div#projetos-area {
+    padding: 150px 0 100px;
+    
+}
+
+div#projetos-area h3.projetos-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+div#projetos-area div.card {
+    border: 10px solid transparent;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+    cursor: default;
+    margin-bottom: 25px;
+    transform: scale(0.95);
+    background-color: #1C3C5E;
+    
+}
+
+div#projetos-area div.card img {
+    border-radius: 20px;
+}
+
+div#projetos-area div.card-body {
+    text-align: center;
+}
+
+div#projetos-area div.card-body .card-title {
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+div#projetos-area div.card-body p.card-text {
+    text-align: justify;
+    font-size: 17px;
+    font-weight: lighter;
+    color: white;
+
+}
+
+div#projetos-area .btn.btn-primary {
+    padding: 10px; border-radius: 20px; width: 100px; font-weight: 500; font-size: 19px;
+}
+ 
+
+
+/*-------- CONTATO --------*/
+
+div#contato-area {
+    background-color: white;
+    padding: 150px 0 100px;
+}
+
+div#contato-area div.form-group input, div#contato-area div.form-group #mensagem {
+    border: 1px solid #34a0d6;
+    border-radius: 10px;
+}
+
+/*----- FOOTER -----*/
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+footer ul img {
+    width: 30px;
+    transition: .3s all ease-in-out;
+
+}
+
+footer ul img:hover {
+    transform: translateY(-7px);
+}
+
+footer p.descricao-footer {
+    font-weight: 400;
+    color: white;
+}

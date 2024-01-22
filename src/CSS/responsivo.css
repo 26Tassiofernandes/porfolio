@@ -1,0 +1,67 @@
+@media (max-width: 991px) {
+
+    /* ---- HOMEPAGE ---- */
+
+    div#home-area h1.nome {
+        font-size: 50px;
+        
+    }
+
+    div#home-area p.descricao-profissao {
+        font-size: 30px;
+
+    }
+
+    div#home-area ul.lista-redes-sociais img {
+        width: 35px;
+    }
+
+    img#ilustracao-homepage {
+        width: 350px;
+    }
+
+    /* ---- PROJETOS ---- */
+
+    
+
+
+
+}
+
+@media (max-width: 767px) {
+
+    /* ---- HOMEPAGE ---- */
+
+    img#ilustracao-homepage {
+        display: none;
+    }
+
+    div#home-area .col-md-6 { /*Refere a descrição, profissao, redes sociais e botao de curriculo*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    div#home-area .botao-baixar-cv a {
+        width: 100%;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    /* ---- SOBRE MIM ---- */
+
+    h3.about-title {
+        margin-top: 20px;
+    }
+
+    /* ----  CONTATO ---- */
+
+
+
+
+
+
+}

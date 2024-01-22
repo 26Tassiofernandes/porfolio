@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    background-color: #061323;
+}
+
+p, li {
+    color: #747373;
+    list-style: none;
+}
