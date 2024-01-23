@@ -279,7 +279,7 @@ div#projetos-area div.card-body .card-title {
 }
 
 div#projetos-area div.card-body p.card-text {
-    text-align: justify;
+    text-align: center;
     font-size: 17px;
     font-weight: lighter;
     color: white;

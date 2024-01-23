@@ -58,11 +58,11 @@
         margin-top: 20px;
     }
 
-    /* ----  CONTATO ---- */
+}
 
+@media (max-width:520px) {
 
-
-
-
-
+    div#projetos-area div.card-body p.card-text {
+        font-size: 15px;
+    }
 }
