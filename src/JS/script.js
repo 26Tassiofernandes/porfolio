@@ -16,7 +16,7 @@ const titulo = document.querySelector('.descricao-profissao');
 typeWrite(titulo);
 
 
-// Mexendo com o Navbar
+// MANIPULANDO O NAVBAR
 
   document.addEventListener("DOMContentLoaded", function () {
 
@@ -24,12 +24,12 @@ typeWrite(titulo);
 
     var navbarToggler = document.getElementById("botao-navbar");
 
-    // Verifica se o botão de navegação existe e está visível
+    // Verifica se o botão de navegação (hamburguer) existe e está visível
 
     if (navbarToggler && window.getComputedStyle(navbarToggler).display === "block") {
 
       // Obtém todos os links da barra de navegação
-      
+
       var navLinks = document.querySelectorAll(".nav-item.nav-link");
 
       // Adiciona um ouvinte de eventos a cada link
