@@ -3,7 +3,7 @@
     /* ---- HOMEPAGE ---- */
 
     div#home-area {
-        padding-bottom: 70%;
+        padding-bottom: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -61,6 +61,10 @@
 }
 
 @media (max-width:520px) {
+
+    div#home-area {
+        padding-bottom: 50%;
+    }
 
     div#projetos-area div.card-body p.card-text {
         font-size: 15px;
