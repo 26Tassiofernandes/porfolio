@@ -1,7 +1,7 @@
 /*-------- HEADER/CABEÇALHO --------*/
 
 header {
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
 }
 
 header nav.navbar {
@@ -132,9 +132,7 @@ div#home-area .botao-baixar-cv a {
     
 }
 
-img#ilustracao-homepage {
-    width: 400px;
-}
+
 
 /*-------- SOBRE MIM --------*/
 

@@ -45,4 +45,3 @@ typeWrite(titulo);
       });
     }
   });
-

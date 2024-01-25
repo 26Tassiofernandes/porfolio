@@ -33,7 +33,7 @@
 
     /* ---- HOMEPAGE ---- */
 
-    img#ilustracao-homepage {
+    div#home-area .img-fluid {
         display: none;
     }
 
