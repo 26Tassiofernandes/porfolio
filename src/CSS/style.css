@@ -132,7 +132,9 @@ div#home-area .botao-baixar-cv a {
     
 }
 
-
+img#ilustracao-homepage {
+    width: 400px;
+}
 
 /*-------- SOBRE MIM --------*/
 
