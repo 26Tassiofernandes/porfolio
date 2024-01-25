@@ -33,6 +33,10 @@
 
     /* ---- HOMEPAGE ---- */
 
+    div#home-area {
+        padding: 150px 0 150px;
+    }
+
     div#home-area .img-fluid {
         display: none;
     }
