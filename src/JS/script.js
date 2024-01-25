@@ -40,6 +40,7 @@ typeWrite(titulo);
           // Fecha o menu de navegação ao clicar em um link
 
           navbarToggler.click();
+          
         });
       });
     }
