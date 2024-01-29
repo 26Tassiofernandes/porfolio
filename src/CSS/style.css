@@ -140,7 +140,7 @@ img#ilustracao-homepage {
 
 div#sobre-mim-area {
     background-color: white;
-    padding: 150px 0 200px; /* padding-top, padding-right | padding-left, padding-bottom, respectivamente */
+    padding: 150px 0 200px; /* padding-top, padding-right | padding-left, padding-bottom, respectivamente (é só ler no sentido horário) */
 }
 
 div h3.about-title { /*Título*/
