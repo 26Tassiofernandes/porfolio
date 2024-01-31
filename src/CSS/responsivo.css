@@ -64,9 +64,24 @@
 
 }
 
+@media (max-width:575px) {
+    div#experiencia-area .container-experiencia {
+        width: 450px;
+    }
+}
+
 @media (max-width:520px) {
 
     div#projetos-area div.card-body p.card-text {
         font-size: 15px;
+    }
+
+    
+}
+
+@media (max-width:497px) {
+
+    div#experiencia-area .container-experiencia {
+        width: 300px;
     }
 }

@@ -69,20 +69,25 @@ div#navbar-links a:hover {
 /*-------- CONTEÚDO HOMEPAGE --------*/
 
 div#home-area {
-    padding: 230px 0 200px;
+    padding: 34vh 0 34vh;
     background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     
 }
 
 div#home-area h1.nome {
     color: white;
-    font-size: 70px;
+    font-size: 80px;
     font-weight: bolder;
     font-variant: small-caps;
 }
 
 div#home-area p.descricao-profissao {
-    font-size: 38px;
+    font-size: 50px;
     font-weight: 400;
     font-variant: small-caps;
 }
@@ -131,15 +136,25 @@ div#home-area .botao-baixar-cv a {
     
 }
 
-img#ilustracao-homepage {
-    width: 400px;
+div.informacoes { /* Refere-se as seções das informações da homepage e sobre mim*/
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
 }
 
 /*-------- SOBRE MIM --------*/
 
 div#sobre-mim-area {
     background-color: white;
-    padding: 150px 0 200px; /* padding-top, padding-right | padding-left, padding-bottom, respectivamente (é só ler no sentido horário) */
+    padding: 150px 0 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 div h3.about-title { /*Título*/
@@ -160,6 +175,11 @@ div p.descricao { /* Minha descrição */
 div#skills-area {
     padding: 150px 0 100px;
     background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 div#skills-area h3.skills-title {
@@ -203,40 +223,34 @@ div.col-md-4.service-box i.fab p, div.col-md-4.service-box i.fas p {
 /*-------- EXPERIÊNCIA --------*/
 
 div#experiencia-area {
-    background-color: white;
     padding: 150px 0 100px;
+    min-height: 100vh;
+}
+
+div#experiencia-area .container-experiencia {
+    border: 2px solid #34a0d6;
+    padding: 20px;
+    margin-bottom: 30px;
     
 }
 
-h3.experiencia-title  {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 10px;
-    
-}
-
-div#experiencia-area .card {
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    padding: 30px;
-    border-radius:30px;
-}
-
-li.card-text {
-    font-size: 17px;
-    font-weight: normal;
-    color: white;
-    
+div#experiencia-area .container-experiencia a {
+    text-decoration: none;
+    color: #061323;
 }
 
 p.descricao-experiencia {
-    font-weight: 400;
-    color: rgba(240, 232, 232, 0.986);
+    font-size: 19px;
+    font-weight: normal;
+    color: #061323;
+    
 }
+
 
 i.fas.fa-check {
     color: rgb(4, 179, 4);
     padding: 10px;
+    padding-left: 0;
     
 }
 
@@ -298,6 +312,11 @@ div#projetos-area .btn.btn-primary {
 div#contato-area {
     background-color: white;
     padding: 150px 0 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 div#contato-area div.form-group input, div#contato-area div.form-group #mensagem {
@@ -310,14 +329,14 @@ div#contato-area div.form-group input, div#contato-area div.form-group #mensagem
 footer {
     background-color: #061323;
     padding-bottom: 1px;
-    padding-top: 40px;
+    padding-top: 25px;
 }
 
 footer ul {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     
 }
 

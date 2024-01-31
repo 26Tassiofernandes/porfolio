@@ -7,7 +7,7 @@ function typeWrite(elemento){
       
     setTimeout(function(){
         elemento.innerHTML += letra;
-    }, 120 * i)
+    }, 150 * i)
 
   });
 }
