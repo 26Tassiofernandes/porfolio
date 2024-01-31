@@ -1,6 +1,5 @@
 /*-------- HEADER/CABEÇALHO --------*/
 
-
 header nav.navbar {
     background-color: #1C3C5E;
     
@@ -295,7 +294,7 @@ div#projetos-area div.card-body .card-title {
 
 div#projetos-area div.card-body p.card-text {
     text-align: center;
-    font-size: 17px;
+    font-size: 21px;
     font-weight: lighter;
     color: white;
 

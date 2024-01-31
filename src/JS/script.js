@@ -15,6 +15,10 @@ function typeWrite(elemento){
 const titulo = document.querySelector('.descricao-profissao');
 typeWrite(titulo);
 
+// Inicialize o AOS em seu script JavaScript (usado para exibir animações de carregamento no site):
+
+AOS.init();
+
 
 // MANIPULANDO O NAVBAR
 

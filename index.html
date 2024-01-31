@@ -47,6 +47,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <!-- Adicionando o AOS via CDN (lib de animações) -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
 
     <link rel="stylesheet" href="src/CSS/style.css">
     <link rel="stylesheet" href="src/CSS/reset.css">
@@ -105,9 +111,9 @@
 
                 <div class="col-md-6" class="informacoes">
 
-                    <h1 class="nome">Tássio Fernandes</h1>
-                    <p class="descricao-profissao">Desenvolvedor Web</p>
-                    <ul class="lista-redes-sociais">
+                    <h1 data-aos="slide-right" data-aos-delay="400" class="nome">Tássio Fernandes</h1>
+                    <p data-aos="slide-right" data-aos-delay="500" class="descricao-profissao">Desenvolvedor Web</p>
+                    <ul data-aos="slide-right" data-aos-delay="600" class="lista-redes-sociais">
 
                         <abbr title="Linkedin">
 
@@ -132,7 +138,7 @@
 
                     </ul>
 
-                    <div class="botao-baixar-cv">
+                    <div class="botao-baixar-cv" data-aos="fade-in" data-aos-delay="850">
 
                         <a download href="src/arquivos/curriculo.pdf" class="btn btn-primary">Baixar CV</a>
 
@@ -140,7 +146,7 @@
 
                 </div>
 
-                <div class="col-md-6" class="informacoes">
+                <div class="col-md-6" class="informacoes" data-aos="slide-left">
 
                     <img class="img-fluid" style="height: 95%; width: 450px; transform: scale(1.2);" src="src/images/ilustracao-home-page.webp"
                         alt="Personagem da imagem da homepage na mesa">
@@ -162,12 +168,12 @@
             <div class="row">
 
                 <div class="col-md-6" class="informacoes">
-                    <img class="img-fluid" style="height: 100%;" src="src/images/ilustracao-about-me.webp"
+                    <img class="img-fluid" data-aos="slide-right" data-aos-delay="300" style="height: 100%;" src="src/images/ilustracao-about-me.webp"
                         alt="Ilustração de um personagem programando">
 
                 </div>
 
-                <div class="col-md-6" class="informacoes">
+                <div class="col-md-6" class="informacoes" data-aos="slide-left">
                     <h3 class="about-title">Sobre mim</h3>
                     <p class="descricao">Sou um estudante de Bacharelado em Ciência da Computação na Universidade
                         Federal do Amapá (Unifap) e também estagiário de Sistemas no Tribunal de Justiça do Estado do
@@ -192,7 +198,7 @@
 
     <div id="skills-area">
 
-        <div class="container">
+        <div class="container" data-aos="slide-right">
 
             <div class="row">
                 <div class="col-12">
@@ -350,7 +356,7 @@
 
                 </div>
 
-                <div class="container container-experiencia"> <!-- PRIMEIRO CONTAINER -->
+                <div class="container container-experiencia" data-aos="slide-right"> <!-- PRIMEIRO CONTAINER -->
 
                     <h3 class="titulo-experiencias"><strong><a href="https://www.linkedin.com/company/tjap-oficial/" target="_blank" rel="external"><i class="bi bi-building-fill"></i>Tribunal de Justiça do Estado do Amapá</a></strong></h3> <br>
                     <p class="descricao-experiencia"><strong>Função</strong>: Atualmente, estou desempenhando o papel de estagiário de Desenvolvimento Web no Tribunal de Justiça do Estado do Amapá. Minha principal responsabilidade é contribuir para o desenvolvimento e implementação de aplicações e soluções tecnológicas utilizando tecnologias web e práticas de programação modernas que atendam às demandas específicas da empresa.</p>
@@ -361,7 +367,7 @@
                 </div>
 
 
-                <div class="container container-experiencia"> <!-- SEGUNDO CONTAINER -->
+                <div class="container container-experiencia" data-aos="slide-left"> <!-- SEGUNDO CONTAINER -->
 
                     <h2 class="titulo-experiencias"><strong><a href="https://www.linkedin.com/company/universidade-federal-do-amapá-unifap/" target="_blank" rel="external">Universidade Federal do Amapá</a></strong></h2> <br>
                     <p class="descricao-experiencia"><strong>Função</strong>: Atua como estudante de Bacharelado em Ciência da Computação na Unifap, atualmente está no 8°
@@ -395,9 +401,9 @@
 
                 <!-- CARROSSEL -->
 
-                <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+                <div id="mainSlider" class="carousel slide" data-bs-ride="carousel" style="transform: scale(0.89); ">
 
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" data-aos="slide-left">
                     
                         <!----- PRIMEIRO CARD / PLANTEL LIVERPOOL ----->
 
@@ -848,7 +854,7 @@
 
                 <div class="col-md-6" style="display: flex; justify-content: center; align-items: center; height: 50vh;">
                     <!-- A classe img-fluid deixa a imagem responsiva e adaptável para diferentes tipos de tela -->
-                    <img class="img-fluid" style="margin-bottom: 90px;" src="src/images/ilustracao-contato.webp"
+                    <img class="img-fluid" data-aos="slide-right" style="margin-bottom: 90px;" src="src/images/ilustracao-contato.webp"
                         alt="Imagem ilustrativa de contato">
 
 
@@ -856,7 +862,7 @@
 
                 <!-- CONSTRUINDO O FORMULÁRIO -->
 
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="slide-left">
 
                     <!-- Usei o  Formspree como serviço de formulário de email -->
 
