@@ -35,6 +35,10 @@
 
 @media (max-width: 767px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     /* ---- HOMEPAGE ---- */
 
     div#home-area {
@@ -69,12 +73,21 @@
 }
 
 @media (max-width:575px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     div#experiencia-area .container-experiencia {
         width: 450px;
     }
 }
 
 @media (max-width:520px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     div#projetos-area div.card-body p.card-text {
         font-size: 15px;
@@ -84,6 +97,10 @@
 }
 
 @media (max-width:497px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     div#experiencia-area .container-experiencia {
         width: 300px;
