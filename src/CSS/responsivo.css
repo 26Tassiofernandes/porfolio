@@ -2,6 +2,10 @@
 
     /* ---- HOMEPAGE ---- */
 
+    body {
+        overflow-x: hidden;
+    }
+
     div#home-area {
         padding-bottom: 30%;
         display: flex;
