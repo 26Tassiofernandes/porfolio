@@ -2,7 +2,7 @@
 
     /* ---- HOMEPAGE ---- */
 
-    body {
+    body, html {
         overflow-x: hidden;
     }
 
@@ -35,7 +35,7 @@
 
 @media (max-width: 767px) {
 
-    body {
+    body, html {
         overflow-x: hidden;
     }
 
@@ -74,7 +74,7 @@
 
 @media (max-width:575px) {
 
-    body {
+    body, html {
         overflow-x: hidden;
     }
 
@@ -85,7 +85,7 @@
 
 @media (max-width:520px) {
 
-    body {
+    body, html {
         overflow-x: hidden;
     }
 
@@ -98,7 +98,7 @@
 
 @media (max-width:497px) {
 
-    body {
+    body, html {
         overflow-x: hidden;
     }
 
