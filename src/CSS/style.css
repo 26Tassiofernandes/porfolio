@@ -52,7 +52,7 @@ div#navbar-links a {
     margin: 5px;
     padding: 10px 20px;
     font-size: 18px;
-    border-radius: 50px;
+    border-radius: 4px;
     transition: 0.3s ease-in-out;
     
     
@@ -147,7 +147,7 @@ div.informacoes { /* Refere-se as seções das informações da homepage e sobre
 /*-------- SOBRE MIM --------*/
 
 div#sobre-mim-area {
-    background-color: white;
+    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
     padding: 150px 0 100px;
     min-height: 100vh;
     display: flex;
@@ -157,7 +157,7 @@ div#sobre-mim-area {
 }
 
 div h3.about-title { /*Título*/
-    color: #061323;
+    color: white;
     font-weight: bold;
     text-align: center;
     padding-bottom: 10px;
@@ -166,7 +166,7 @@ div h3.about-title { /*Título*/
 div p.descricao { /* Minha descrição */
     font-size: 17px;
     font-weight: normal;
-    color: #061323;
+    color: rgba(255, 255, 255, 0.938);
 }
 
 /*-------- MINHAS SKILLS --------*/
@@ -222,6 +222,7 @@ div.col-md-4.service-box i.fab p, div.col-md-4.service-box i.fas p {
 /*-------- EXPERIÊNCIA --------*/
 
 div#experiencia-area {
+    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
     padding: 150px 0 100px;
     min-height: 100vh;
 }
@@ -235,13 +236,13 @@ div#experiencia-area .container-experiencia {
 
 div#experiencia-area .container-experiencia a {
     text-decoration: none;
-    color: #061323;
+    color: white;
 }
 
 p.descricao-experiencia {
     font-size: 19px;
     font-weight: normal;
-    color: #061323;
+    color: white;
     
 }
 
@@ -309,7 +310,7 @@ div#projetos-area .btn.btn-primary {
 /*-------- CONTATO --------*/
 
 div#contato-area {
-    background-color: white;
+    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
     padding: 150px 0 100px;
     min-height: 100vh;
     display: flex;
@@ -319,7 +320,7 @@ div#contato-area {
 }
 
 div#contato-area div.form-group input, div#contato-area div.form-group #mensagem {
-    border: 1px solid #34a0d6;
+    border: none;
     border-radius: 10px;
 }
 
