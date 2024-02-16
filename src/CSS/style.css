@@ -320,9 +320,17 @@ div#contato-area {
 }
 
 div#contato-area div.form-group input, div#contato-area div.form-group #mensagem {
-    border: none;
+    border: 1px solid #34a0d6;
     border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    
 }
+
+#nome::placeholder, #email::placeholder, #mensagem::placeholder {
+    color: rgba(255, 255, 255, 0.795);
+}
+
 
 /*----- FOOTER -----*/
 
