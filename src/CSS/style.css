@@ -290,21 +290,23 @@ div#projetos-area div.card-body {
 div#projetos-area div.card-body .card-title {
     text-align: center;
     font-weight: 600;
+    font-size: 25px;
     color: white;
 }
 
 div#projetos-area div.card-body p.card-text {
     text-align: center;
-    font-size: 21px;
+    font-size: 23px;
     font-weight: lighter;
     color: white;
 
 }
 
 div#projetos-area .btn.btn-primary {
-    padding: 10px; border-radius: 20px; width: 100px; font-weight: 500; font-size: 19px;
+    padding: 10px; border-radius: 20px; width: 100px; font-weight: 500; font-size: 25px;
 }
- 
+
+
 
 
 /*-------- CONTATO --------*/
