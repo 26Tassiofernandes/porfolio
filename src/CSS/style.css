@@ -304,8 +304,8 @@ div#projetos-area div.card-body p.card-text {
 
 div#projetos-area .btn.btn-primary {
     padding: 10px; border-radius: 20px; width: 100px; font-weight: 500; font-size: 25px;
+    transition: all .3s ease-in-out;
 }
-
 
 
 
