@@ -9,7 +9,7 @@
 
 <a href="https://26tassiofernandes.github.io/porfolio/" rel="external">Portfólio</a>
 
-<img src=""/>
+<img src="https://github.com/26Tassiofernandes/porfolio/assets/86972667/e44a9a49-5423-4afb-a63e-b083d48ce5f2"/>
 
 </div>
 
