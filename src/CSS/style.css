@@ -146,7 +146,7 @@ div h3.about-title { /*Título*/
 }
 
 div p.descricao { /* Minha descrição */
-    font-size: 17px;
+    font-size: 19px;
     font-weight: normal;
     color: rgba(255, 255, 255, 0.938);
 }
@@ -172,19 +172,19 @@ div#skills-area h3.skills-title {
 div.col-md-4.service-box i.fab, div.col-md-4.service-box i.fas { /*ícones dos cursos*/
     display: flex;
     flex-direction: column;
-    font-size: 50px;
-    /* justify-content: center; */
+    font-size: 60px;
     align-items: center;
-    padding: 20px;
+    padding-bottom: 70px;
     transition: all .5s;
     color: white;
+    margin-top: 10px;
 }
 
 div i.fab h4, div i.fas h4 { /*Título dos cursos*/
     font-family: 'Saira Condensed', sans-serif;
     margin-top: 10px;
-    margin-bottom: 15px;
-    justify-content: left;
+    /* margin-bottom: 15px; */
+    
 }
 
 div.col-md-4.service-box i.fab:hover, div.col-md-4.service-box i.fas:hover, div.col-md-4.service-box i.fab h4:hover {
@@ -192,14 +192,14 @@ div.col-md-4.service-box i.fab:hover, div.col-md-4.service-box i.fas:hover, div.
     transition: all .5s;
 }
 
-div.col-md-4.service-box i.fab p, div.col-md-4.service-box i.fas p {
+/* div.col-md-4.service-box i.fab p, div.col-md-4.service-box i.fas p {
     color: white;
     font-family: 'Saira Condensed', sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: normal;
     text-align: center;
-}
+} */
 
 /*-------- EXPERIÊNCIA --------*/
 
