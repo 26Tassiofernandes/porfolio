@@ -134,7 +134,7 @@ div#sobre-mim-area {
     background-color: #110B23;
     min-height: 100vh;
     align-items: center;
-    margin-right: 25px;
+    padding: 20px;
     text-align: justify;
 }
 
