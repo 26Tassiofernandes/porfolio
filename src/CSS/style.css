@@ -1,7 +1,17 @@
+/* ==== PALETA DE CORES ==== */
+
+:root {
+    --rosa: #F91E4E;
+    --roxo-claro: #1c113a;
+    --roxo-escuro: #110B23;
+    --branco: white;
+}
+
+
 /*-------- HEADER/CABEÇALHO --------*/
 
 header nav.navbar {
-    background-color: #110B23;
+    background-color: var(--roxo-escuro);
     
 }
 
@@ -9,6 +19,7 @@ header nav a#link-brand {
     display: flex;
     cursor: default;
     margin-left: 30px;
+    
 }
 
 nav img { /*Imagem do logo*/
@@ -20,7 +31,7 @@ nav img { /*Imagem do logo*/
 button#botao-navbar { /*Botão do menú quando fica em tela menor*/
     position: relative;
     right: 10px;
-    background-color: white;
+    background-color: #ffffff;
     transition: 0.5s ease-in-out;
 }
 
@@ -55,8 +66,10 @@ div#navbar-links a:hover {
 div#home-area {
     background-color: #110B23;
     display: flex;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     align-items: center;
+    justify-content: center;
+    
 }
 
 div#home-area h1.nome {
@@ -88,34 +101,36 @@ div#home-area p.descricao-profissao::after { /*Efeito de máquina de escrever*/
 
 div#home-area ul.lista-redes-sociais {
     display: flex;
+    align-items: center;
     gap: 20px;
     padding: 0;
 
 }
 
 div#home-area ul.lista-redes-sociais img {
-    width: 40px;
+    width: 45px;
+    border-radius: 4px;
+    filter: invert();
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
 div#home-area ul.lista-redes-sociais img:hover {
     transform: translateY(-7px); /*Os elementos vão suavemente para cima*/
+    
 }
 
 div#home-area .botao-baixar-cv {
-    margin-top: 20px;    
-    font-variant: small-caps;
-    
+    margin-top: 20px;
 }
 
 div#home-area .botao-baixar-cv a {
-    width: 35%;
-    font-size: 25px;
+    width: 50%;
+    font-size: 30px;
+    padding: 10px;
     border-radius: 4px;
     background-color: #F91E4E;
     border: none;
-    
 }
 
 div.informacoes { /* Refere-se as seções das informações da homepage e sobre mim*/
@@ -261,7 +276,7 @@ div#projetos-area div.card {
     cursor: default;
     margin-bottom: 25px;
     transform: scale(0.95);
-    background-color: #24164b;
+    background-color: var(--roxo-claro);
     
 }
 
@@ -329,7 +344,7 @@ div#contato-area .btn.btn-primary {
 
 footer {
     margin-top: 50px;
-    background-color: #24164b;
+    background-color: var(--roxo-claro);
     padding-bottom: 1px;
     padding-top: 25px;
 }
@@ -338,15 +353,18 @@ footer ul {
     display: flex;
     gap: 20px;
     justify-content: center;
+    align-items: center;
     margin-bottom: 15px;
     
 }
 
 footer ul img {
-    width: 30px;
+    width: 40px;
+    filter: invert(1);
     margin-top: 0px;
     transition: .3s all ease-in-out;
     text-align: center;
+
 
 }
 
@@ -358,3 +376,4 @@ footer p.descricao-footer {
     font-weight: 400;
     color: white;
 }
+

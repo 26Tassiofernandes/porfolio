@@ -7,24 +7,24 @@
     }
 
     div#home-area {
-        padding-bottom: 30%;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     div#home-area h1.nome {
-        font-size: 50px;
+        font-size: 60px;
         
     }
 
     div#home-area p.descricao-profissao {
-        font-size: 30px;
+        font-size: 40px;
 
     }
 
     div#home-area ul.lista-redes-sociais img {
-        width: 35px;
+        width: 45px;
     }
 
     img#ilustracao-homepage {
@@ -47,7 +47,7 @@
         align-items: center;
     }
 
-    div#home-area .img-fluid {
+    div#home-area #imagem-homepage {
         display: none;
     }
 
