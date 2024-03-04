@@ -1,33 +1,20 @@
 /*-------- HEADER/CABEÇALHO --------*/
 
 header nav.navbar {
-    background-color: #1C3C5E;
+    background-color: #110B23;
     
 }
 
 header nav a#link-brand {
     display: flex;
     cursor: default;
-    margin-left: 8px;
-}
-
-header nav a p#titulo-principal {
-    color: white;
-    font-size: 27px;
-    margin: auto;
-    position: relative;
-    left: 5px;
-}
-
-header div#nav-container {
-    padding: 0;
+    margin-left: 30px;
 }
 
 nav img { /*Imagem do logo*/
     width: 90px;
     padding: 10px;
-    filter: invert(1);
-    
+    filter: invert(1);   
 }
 
 button#botao-navbar { /*Botão do menú quando fica em tela menor*/
@@ -54,28 +41,22 @@ div#navbar-links a {
     font-size: 18px;
     border-radius: 4px;
     transition: 0.3s ease-in-out;
-    
-    
+
 }
 
 div#navbar-links a:hover {
     cursor: pointer;
-    background-color: white;
-    color: #061323;
-    
+    background-color: #F91E4E;
+    color: white;
 }
 
 /*-------- CONTEÚDO HOMEPAGE --------*/
 
 div#home-area {
-    padding: 34vh 0 34vh;
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    min-height: 100vh;
+    background-color: #110B23;
     display: flex;
-    justify-content: center;
+    min-height: 100vh;
     align-items: center;
-    margin: 0 auto;
-    
 }
 
 div#home-area h1.nome {
@@ -132,6 +113,8 @@ div#home-area .botao-baixar-cv a {
     width: 35%;
     font-size: 25px;
     border-radius: 4px;
+    background-color: #F91E4E;
+    border: none;
     
 }
 
@@ -147,13 +130,12 @@ div.informacoes { /* Refere-se as seções das informações da homepage e sobre
 /*-------- SOBRE MIM --------*/
 
 div#sobre-mim-area {
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    padding: 150px 0 100px;
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    background-color: #110B23;
+    min-height: 100vh;
     align-items: center;
-    margin: 0 auto;
+    margin-right: 25px;
+    text-align: justify;
 }
 
 div h3.about-title { /*Título*/
@@ -172,13 +154,13 @@ div p.descricao { /* Minha descrição */
 /*-------- MINHAS SKILLS --------*/
 
 div#skills-area {
-    padding: 150px 0 100px;
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    min-height: 100vh;
+    background-color: #110B23;
     display: flex;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    padding-top: 100px;
+    
 }
 
 div#skills-area h3.skills-title {
@@ -206,7 +188,7 @@ div i.fab h4, div i.fas h4 { /*Título dos cursos*/
 }
 
 div.col-md-4.service-box i.fab:hover, div.col-md-4.service-box i.fas:hover, div.col-md-4.service-box i.fab h4:hover {
-    color: #34a0d6;
+    color: #F91E4E;
     transition: all .5s;
 }
 
@@ -222,13 +204,15 @@ div.col-md-4.service-box i.fab p, div.col-md-4.service-box i.fas p {
 /*-------- EXPERIÊNCIA --------*/
 
 div#experiencia-area {
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    padding: 150px 0 100px;
+    display: flex;
+    background-color: #110B23;
     min-height: 100vh;
+    align-items: center;
+    padding-top: 100px;
 }
 
 div#experiencia-area .container-experiencia {
-    border: 2px solid #34a0d6;
+    border: 2px solid #F91E4E;
     padding: 20px;
     margin-bottom: 30px;
     
@@ -246,7 +230,6 @@ p.descricao-experiencia {
     
 }
 
-
 i.fas.fa-check {
     color: rgb(4, 179, 4);
     padding: 10px;
@@ -257,8 +240,11 @@ i.fas.fa-check {
 /*-------- PROJETOS --------*/
 
 div#projetos-area {
-    padding: 150px 0 100px;
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #110B23;
+    padding-top: 100px;
     
 }
 
@@ -275,7 +261,7 @@ div#projetos-area div.card {
     cursor: default;
     margin-bottom: 25px;
     transform: scale(0.95);
-    background-color: #1C3C5E;
+    background-color: #24164b;
     
 }
 
@@ -305,28 +291,33 @@ div#projetos-area div.card-body p.card-text {
 div#projetos-area .btn.btn-primary {
     padding: 10px; border-radius: 20px; width: 100px; font-weight: 500; font-size: 25px;
     transition: all .3s ease-in-out;
+    background-color: #F91E4E;
+    border: none;
 }
-
-
 
 /*-------- CONTATO --------*/
 
 div#contato-area {
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    padding: 150px 0 100px;
-    min-height: 100vh;
     display: flex;
+    background-color: #110B23;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 
 div#contato-area div.form-group input, div#contato-area div.form-group #mensagem {
-    border: 1px solid #34a0d6;
+    border: 1px solid #F91E4E;
     border-radius: 10px;
     background-color: transparent;
     color: white;
     
+}
+
+
+div#contato-area .btn.btn-primary {
+    background-color: #F91E4E;
+    border: none;
 }
 
 #nome::placeholder, #email::placeholder, #mensagem::placeholder {
@@ -337,7 +328,8 @@ div#contato-area div.form-group input, div#contato-area div.form-group #mensagem
 /*----- FOOTER -----*/
 
 footer {
-    background-color: #061323;
+    margin-top: 50px;
+    background-color: #24164b;
     padding-bottom: 1px;
     padding-top: 25px;
 }
