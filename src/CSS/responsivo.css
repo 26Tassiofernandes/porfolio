@@ -7,10 +7,10 @@
     }
 
     div#home-area {
-        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: calc(100vh - 100px);
     }
 
     div#home-area h1.nome {
@@ -45,6 +45,8 @@
         display: flex;
         min-height: 100vh;
         align-items: center;
+        justify-content: baseline;
+        min-height: calc(100vh - 100px);
     }
 
     div#home-area #imagem-homepage {
