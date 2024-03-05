@@ -1,9 +1,9 @@
 /* ==== PALETA DE CORES ==== */
 
 :root {
-    --rosa: #F91E4E;
+    --cor-primaria: #056945;
     --roxo-claro: #1c113a;
-    --roxo-escuro: #110B23;
+    --background: #080705;
     --branco: white;
 }
 
@@ -11,7 +11,7 @@
 /*-------- HEADER/CABEÇALHO --------*/
 
 header nav.navbar {
-    background-color: var(--roxo-escuro);
+    background-color: var(--background);
     
 }
 
@@ -57,14 +57,14 @@ div#navbar-links a {
 
 div#navbar-links a:hover {
     cursor: pointer;
-    background-color: #F91E4E;
+    background-color: var(--cor-primaria);
     color: white;
 }
 
 /*-------- CONTEÚDO HOMEPAGE --------*/
 
 div#home-area {
-    background-color: #110B23;
+    background-color: var(--background);
     display: flex;
     min-height: calc(100vh - 100px);
     align-items: center;
@@ -129,7 +129,7 @@ div#home-area .botao-baixar-cv a {
     font-size: 30px;
     padding: 10px;
     border-radius: 4px;
-    background-color: #F91E4E;
+    background-color: var(--cor-primaria);
     border: none;
 }
 
@@ -146,11 +146,10 @@ div.informacoes { /* Refere-se as seções das informações da homepage e sobre
 
 div#sobre-mim-area {
     display: flex;
-    background-color: #110B23;
+    background-color: var(--background);
     min-height: 100vh;
     align-items: center;
     padding: 20px;
-    text-align: justify;
 }
 
 div h3.about-title { /*Título*/
@@ -169,7 +168,7 @@ div p.descricao { /* Minha descrição */
 /*-------- MINHAS SKILLS --------*/
 
 div#skills-area {
-    background-color: #110B23;
+    background-color: var(--background);
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -203,7 +202,7 @@ div i.fab h4, div i.fas h4 { /*Título dos cursos*/
 }
 
 div.col-md-4.service-box i.fab:hover, div.col-md-4.service-box i.fas:hover, div.col-md-4.service-box i.fab h4:hover {
-    color: #F91E4E;
+    color: var(--cor-primaria);
     transition: all .5s;
 }
 
@@ -220,14 +219,14 @@ div.col-md-4.service-box i.fab:hover, div.col-md-4.service-box i.fas:hover, div.
 
 div#experiencia-area {
     display: flex;
-    background-color: #110B23;
+    background-color: var(--background);
     min-height: 100vh;
     align-items: center;
     padding-top: 100px;
 }
 
 div#experiencia-area .container-experiencia {
-    border: 2px solid #F91E4E;
+    border: 2px solid var(--cor-primaria);
     padding: 20px;
     margin-bottom: 30px;
     
@@ -255,10 +254,10 @@ i.fas.fa-check {
 /*-------- PROJETOS --------*/
 
 div#projetos-area {
+    background-color: var(--background);
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-color: #110B23;
     padding-top: 100px;
     
 }
@@ -266,17 +265,18 @@ div#projetos-area {
 div#projetos-area h3.projetos-title {
     text-align: center;
     color: white;
-    margin-bottom: 50px;
 }
 
 div#projetos-area div.card {
-    border: 10px solid transparent;
+    border: 1px solid var(--cor-primaria);
+    padding: 20px;
     border-radius: 20px;
     transition: all .5s ease-in-out;
     cursor: default;
     margin-bottom: 25px;
     transform: scale(0.95);
-    background-color: var(--roxo-claro);
+    background-color: var(--background);
+    
     
 }
 
@@ -304,9 +304,12 @@ div#projetos-area div.card-body p.card-text {
 }
 
 div#projetos-area .btn.btn-primary {
-    padding: 10px; border-radius: 20px; width: 100px; font-weight: 500; font-size: 25px;
+    padding: 10px; 
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 25px;
     transition: all .3s ease-in-out;
-    background-color: #F91E4E;
+    background-color: var(--cor-primaria);
     border: none;
 }
 
@@ -314,24 +317,29 @@ div#projetos-area .btn.btn-primary {
 
 div#contato-area {
     display: flex;
-    background-color: #110B23;
+    background-color: var(--background);
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 
+div#contato-area img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 div#contato-area div.form-group input, div#contato-area div.form-group #mensagem {
-    border: 1px solid #F91E4E;
+    border: 1px solid var(--cor-primaria);
     border-radius: 10px;
     background-color: transparent;
     color: white;
     
 }
 
-
 div#contato-area .btn.btn-primary {
-    background-color: #F91E4E;
+    background-color: var(--cor-primaria);
     border: none;
 }
 
@@ -344,7 +352,7 @@ div#contato-area .btn.btn-primary {
 
 footer {
     margin-top: 50px;
-    background-color: var(--roxo-claro);
+    background-color: var(--background);
     padding-bottom: 1px;
     padding-top: 25px;
 }
