@@ -12,23 +12,25 @@
 
 header nav.navbar {
     background-color: var(--background);
-    
+
 }
 
 header nav a#link-brand {
     display: flex;
     cursor: default;
     margin-left: 30px;
-    
+
 }
 
-nav img { /*Imagem do logo*/
+nav img {
+    /*Imagem do logo*/
     width: 90px;
     padding: 10px;
-    filter: invert(1);   
+    filter: invert(1);
 }
 
-button#botao-navbar { /*Botão do menú quando fica em tela menor*/
+button#botao-navbar {
+    /*Botão do menú quando fica em tela menor*/
     position: relative;
     right: 10px;
     background-color: #ffffff;
@@ -69,7 +71,7 @@ div#home-area {
     min-height: calc(100vh - 100px);
     align-items: center;
     justify-content: center;
-    
+
 }
 
 div#home-area h1.nome {
@@ -85,16 +87,20 @@ div#home-area p.descricao-profissao {
     font-variant: small-caps;
 }
 
-div#home-area p.descricao-profissao::after { /*Efeito de máquina de escrever*/
+div#home-area p.descricao-profissao::after {
+    /*Efeito de máquina de escrever*/
     content: '|';
     animation: piscar .7s infinite;
 }
 
 @keyframes piscar {
-    0%, 100%{
+
+    0%,
+    100% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
 }
@@ -116,8 +122,9 @@ div#home-area ul.lista-redes-sociais img {
 }
 
 div#home-area ul.lista-redes-sociais img:hover {
-    transform: translateY(-7px); /*Os elementos vão suavemente para cima*/
-    
+    transform: translateY(-7px);
+    /*Os elementos vão suavemente para cima*/
+
 }
 
 div#home-area .botao-baixar-cv {
@@ -133,13 +140,14 @@ div#home-area .botao-baixar-cv a {
     border: none;
 }
 
-div.informacoes { /* Refere-se as seções das informações da homepage e sobre mim*/
+div.informacoes {
+    /* Refere-se as seções das informações da homepage e sobre mim*/
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    
+
 }
 
 /*-------- SOBRE MIM --------*/
@@ -149,17 +157,19 @@ div#sobre-mim-area {
     background-color: var(--background);
     min-height: 100vh;
     align-items: center;
-    padding: 20px;
+    
 }
 
-div h3.about-title { /*Título*/
+div h3.about-title {
+    /*Título*/
     color: white;
     font-weight: bold;
     text-align: center;
     padding-bottom: 10px;
 }
 
-div p.descricao { /* Minha descrição */
+div p.descricao {
+    /* Minha descrição */
     font-size: 19px;
     font-weight: normal;
     color: rgba(255, 255, 255, 0.938);
@@ -174,7 +184,7 @@ div#skills-area {
     justify-content: center;
     align-items: center;
     padding-top: 100px;
-    
+
 }
 
 div#skills-area h3.skills-title {
@@ -183,7 +193,9 @@ div#skills-area h3.skills-title {
     margin-bottom: 50px;
 }
 
-div.col-md-4.service-box i.fab, div.col-md-4.service-box i.fas { /*ícones dos cursos*/
+div.col-md-4.service-box i.fab,
+div.col-md-4.service-box i.fas {
+    /*ícones dos cursos*/
     display: flex;
     flex-direction: column;
     font-size: 60px;
@@ -194,14 +206,18 @@ div.col-md-4.service-box i.fab, div.col-md-4.service-box i.fas { /*ícones dos c
     margin-top: 10px;
 }
 
-div i.fab h4, div i.fas h4 { /*Título dos cursos*/
+div i.fab h4,
+div i.fas h4 {
+    /*Título dos cursos*/
     font-family: 'Saira Condensed', sans-serif;
     margin-top: 10px;
     /* margin-bottom: 15px; */
-    
+
 }
 
-div.col-md-4.service-box i.fab:hover, div.col-md-4.service-box i.fas:hover, div.col-md-4.service-box i.fab h4:hover {
+div.col-md-4.service-box i.fab:hover,
+div.col-md-4.service-box i.fas:hover,
+div.col-md-4.service-box i.fab h4:hover {
     color: var(--cor-primaria);
     transition: all .5s;
 }
@@ -229,7 +245,7 @@ div#experiencia-area .container-experiencia {
     border: 2px solid var(--cor-primaria);
     padding: 20px;
     margin-bottom: 30px;
-    
+
 }
 
 div#experiencia-area .container-experiencia a {
@@ -241,14 +257,14 @@ p.descricao-experiencia {
     font-size: 19px;
     font-weight: normal;
     color: white;
-    
+
 }
 
 i.fas.fa-check {
     color: rgb(4, 179, 4);
     padding: 10px;
     padding-left: 0;
-    
+
 }
 
 /*-------- PROJETOS --------*/
@@ -259,7 +275,6 @@ div#projetos-area {
     align-items: center;
     min-height: 100vh;
     padding-top: 100px;
-    
 }
 
 div#projetos-area h3.projetos-title {
@@ -302,7 +317,7 @@ div#projetos-area div.card-body p.card-text {
 }
 
 div#projetos-area .btn.btn-primary {
-    padding: 10px; 
+    padding: 10px;
     border-radius: 20px;
     font-weight: 500;
     font-size: 25px;
@@ -314,20 +329,21 @@ div#projetos-area .btn.btn-primary {
 /*-------- CONTATO --------*/
 
 div#contato-area {
-    display: flex;
     background-color: var(--background);
+    display: flex;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-   
+
 }
 
-div#contato-area div.form-group input, div#contato-area div.form-group #mensagem {
+div#contato-area div.form-group input,
+div#contato-area div.form-group #mensagem {
     border: 1px solid var(--cor-primaria);
     border-radius: 10px;
     background-color: transparent;
     color: white;
-    
+
 }
 
 div#contato-area .btn.btn-primary {
@@ -335,7 +351,9 @@ div#contato-area .btn.btn-primary {
     border: none;
 }
 
-#nome::placeholder, #email::placeholder, #mensagem::placeholder {
+#nome::placeholder,
+#email::placeholder,
+#mensagem::placeholder {
     color: rgba(255, 255, 255, 0.795);
 }
 
@@ -355,7 +373,7 @@ footer ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
-    
+
 }
 
 footer ul img {
@@ -376,4 +394,3 @@ footer p.descricao-footer {
     font-weight: 400;
     color: white;
 }
-

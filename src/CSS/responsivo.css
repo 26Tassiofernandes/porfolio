@@ -27,10 +27,6 @@
         width: 45px;
     }
 
-    img#ilustracao-homepage {
-        width: 350px;
-    }
-
 }
 
 @media (max-width: 767px) {
@@ -107,4 +103,5 @@
     div#experiencia-area .container-experiencia {
         width: 300px;
     }
+
 }
