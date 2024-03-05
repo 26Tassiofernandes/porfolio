@@ -373,7 +373,7 @@ footer ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
-
+    
 }
 
 footer ul img {
@@ -382,8 +382,8 @@ footer ul img {
     margin-top: 0px;
     transition: .3s all ease-in-out;
     text-align: center;
-
-
+    
+    
 }
 
 footer ul img:hover {
@@ -393,4 +393,14 @@ footer ul img:hover {
 footer p.descricao-footer {
     font-weight: 400;
     color: white;
+}
+
+/*----- FOOTER -----*/
+
+a#botao-voltar-home {
+    position: fixed;
+    right: 0;
+    font-size: 25px;
+    bottom: 0;
+    padding: 20px;
 }
