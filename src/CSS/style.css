@@ -276,8 +276,6 @@ div#projetos-area div.card {
     margin-bottom: 25px;
     transform: scale(0.95);
     background-color: var(--background);
-    
-    
 }
 
 div#projetos-area div.card img {
@@ -321,13 +319,7 @@ div#contato-area {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-}
-
-div#contato-area img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
 }
 
 div#contato-area div.form-group input, div#contato-area div.form-group #mensagem {
