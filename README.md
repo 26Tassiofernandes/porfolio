@@ -11,7 +11,7 @@
 
 <a href="https://26tassiofernandes.github.io/porfolio/" rel="external">Portfólio</a>
 
-<img src="https://github.com/26Tassiofernandes/porfolio/assets/86972667/e44a9a49-5423-4afb-a63e-b083d48ce5f2"/>
+<img src="https://github.com/26Tassiofernandes/porfolio/assets/86972667/0f5c2d3d-05c4-4375-98a4-70827b3d032e"/>
 
 </div>
 
