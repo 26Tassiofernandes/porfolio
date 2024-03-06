@@ -49,6 +49,10 @@
         display: none;
     }
 
+    #imagem-homepage.d-block {
+        display: none !important; /* Garante que a classe d-block não sobrescreva a configuração na media query */
+    }
+
     div#home-area .col-md-6 { /*Refere a descrição, profissao, redes sociais e botao de curriculo*/
         display: flex;
         flex-direction: column;
