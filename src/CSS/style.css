@@ -1,39 +1,39 @@
+/* ==== PALETA DE CORES ==== */
+
+:root {
+    --cor-primaria: #056945;
+    --roxo-claro: #1c113a;
+    --background: #080705;
+    --branco: white;
+}
+
+
 /*-------- HEADER/CABEÇALHO --------*/
 
 header nav.navbar {
-    background-color: #1C3C5E;
-    
+    background-color: var(--background);
+
 }
 
 header nav a#link-brand {
     display: flex;
     cursor: default;
-    margin-left: 8px;
+    margin-left: 30px;
+
 }
 
-header nav a p#titulo-principal {
-    color: white;
-    font-size: 27px;
-    margin: auto;
-    position: relative;
-    left: 5px;
-}
-
-header div#nav-container {
-    padding: 0;
-}
-
-nav img { /*Imagem do logo*/
+nav img {
+    /*Imagem do logo*/
     width: 90px;
     padding: 10px;
     filter: invert(1);
-    
 }
 
-button#botao-navbar { /*Botão do menú quando fica em tela menor*/
+button#botao-navbar {
+    /*Botão do menú quando fica em tela menor*/
     position: relative;
     right: 10px;
-    background-color: white;
+    background-color: #ffffff;
     transition: 0.5s ease-in-out;
 }
 
@@ -54,28 +54,24 @@ div#navbar-links a {
     font-size: 18px;
     border-radius: 4px;
     transition: 0.3s ease-in-out;
-    
-    
+
 }
 
 div#navbar-links a:hover {
     cursor: pointer;
-    background-color: white;
-    color: #061323;
-    
+    background-color: var(--cor-primaria);
+    color: white;
 }
 
 /*-------- CONTEÚDO HOMEPAGE --------*/
 
 div#home-area {
-    padding: 34vh 0 34vh;
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    min-height: 100vh;
+    background-color: var(--background);
     display: flex;
-    justify-content: center;
+    min-height: calc(100vh - 100px);
     align-items: center;
-    margin: 0 auto;
-    
+    justify-content: center;
+
 }
 
 div#home-area h1.nome {
@@ -91,80 +87,90 @@ div#home-area p.descricao-profissao {
     font-variant: small-caps;
 }
 
-div#home-area p.descricao-profissao::after { /*Efeito de máquina de escrever*/
+div#home-area p.descricao-profissao::after {
+    /*Efeito de máquina de escrever*/
     content: '|';
     animation: piscar .7s infinite;
 }
 
 @keyframes piscar {
-    0%, 100%{
+
+    0%,
+    100% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
 }
 
 div#home-area ul.lista-redes-sociais {
     display: flex;
+    align-items: center;
     gap: 20px;
     padding: 0;
 
 }
 
 div#home-area ul.lista-redes-sociais img {
-    width: 40px;
+    width: 45px;
+    border-radius: 4px;
+    filter: invert();
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
 div#home-area ul.lista-redes-sociais img:hover {
-    transform: translateY(-7px); /*Os elementos vão suavemente para cima*/
+    transform: translateY(-7px);
+    /*Os elementos vão suavemente para cima*/
+
 }
 
 div#home-area .botao-baixar-cv {
-    margin-top: 20px;    
-    font-variant: small-caps;
-    
+    margin-top: 20px;
 }
 
 div#home-area .botao-baixar-cv a {
-    width: 35%;
-    font-size: 25px;
+    width: 50%;
+    font-size: 30px;
+    padding: 10px;
     border-radius: 4px;
-    
+    background-color: var(--cor-primaria);
+    border: none;
 }
 
-div.informacoes { /* Refere-se as seções das informações da homepage e sobre mim*/
+div.informacoes {
+    /* Refere-se as seções das informações da homepage e sobre mim*/
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    
+
 }
 
 /*-------- SOBRE MIM --------*/
 
 div#sobre-mim-area {
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    padding: 150px 0 100px;
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    background-color: var(--background);
+    min-height: 100vh;
     align-items: center;
-    margin: 0 auto;
+    
 }
 
-div h3.about-title { /*Título*/
+div h3.about-title {
+    /*Título*/
     color: white;
     font-weight: bold;
     text-align: center;
     padding-bottom: 10px;
 }
 
-div p.descricao { /* Minha descrição */
-    font-size: 17px;
+div p.descricao {
+    /* Minha descrição */
+    font-size: 19px;
     font-weight: normal;
     color: rgba(255, 255, 255, 0.938);
 }
@@ -172,13 +178,13 @@ div p.descricao { /* Minha descrição */
 /*-------- MINHAS SKILLS --------*/
 
 div#skills-area {
-    padding: 150px 0 100px;
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    min-height: 100vh;
+    background-color: var(--background);
     display: flex;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    padding-top: 100px;
+
 }
 
 div#skills-area h3.skills-title {
@@ -187,51 +193,59 @@ div#skills-area h3.skills-title {
     margin-bottom: 50px;
 }
 
-div.col-md-4.service-box i.fab, div.col-md-4.service-box i.fas { /*ícones dos cursos*/
+div.col-md-4.service-box i.fab,
+div.col-md-4.service-box i.fas {
+    /*ícones dos cursos*/
     display: flex;
     flex-direction: column;
-    font-size: 50px;
-    /* justify-content: center; */
+    font-size: 60px;
     align-items: center;
-    padding: 20px;
+    padding-bottom: 70px;
     transition: all .5s;
     color: white;
+    margin-top: 10px;
 }
 
-div i.fab h4, div i.fas h4 { /*Título dos cursos*/
+div i.fab h4,
+div i.fas h4 {
+    /*Título dos cursos*/
     font-family: 'Saira Condensed', sans-serif;
     margin-top: 10px;
-    margin-bottom: 15px;
-    justify-content: left;
+    /* margin-bottom: 15px; */
+
 }
 
-div.col-md-4.service-box i.fab:hover, div.col-md-4.service-box i.fas:hover, div.col-md-4.service-box i.fab h4:hover {
-    color: #34a0d6;
+div.col-md-4.service-box i.fab:hover,
+div.col-md-4.service-box i.fas:hover,
+div.col-md-4.service-box i.fab h4:hover {
+    color: var(--cor-primaria);
     transition: all .5s;
 }
 
-div.col-md-4.service-box i.fab p, div.col-md-4.service-box i.fas p {
+/* div.col-md-4.service-box i.fab p, div.col-md-4.service-box i.fas p {
     color: white;
     font-family: 'Saira Condensed', sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: normal;
     text-align: center;
-}
+} */
 
 /*-------- EXPERIÊNCIA --------*/
 
 div#experiencia-area {
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    padding: 150px 0 100px;
+    display: flex;
+    background-color: var(--background);
     min-height: 100vh;
+    align-items: center;
+    padding-top: 100px;
 }
 
 div#experiencia-area .container-experiencia {
-    border: 2px solid #34a0d6;
+    border: 2px solid var(--cor-primaria);
     padding: 20px;
     margin-bottom: 30px;
-    
+
 }
 
 div#experiencia-area .container-experiencia a {
@@ -243,40 +257,40 @@ p.descricao-experiencia {
     font-size: 19px;
     font-weight: normal;
     color: white;
-    
-}
 
+}
 
 i.fas.fa-check {
     color: rgb(4, 179, 4);
     padding: 10px;
     padding-left: 0;
-    
+
 }
 
 /*-------- PROJETOS --------*/
 
 div#projetos-area {
-    padding: 150px 0 100px;
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 100px;
 }
 
 div#projetos-area h3.projetos-title {
     text-align: center;
     color: white;
-    margin-bottom: 50px;
 }
 
 div#projetos-area div.card {
-    border: 10px solid transparent;
+    border: 1px solid var(--cor-primaria);
+    padding: 20px;
     border-radius: 20px;
     transition: all .5s ease-in-out;
     cursor: default;
     margin-bottom: 25px;
     transform: scale(0.95);
-    background-color: #1C3C5E;
-    
+    background-color: var(--background);
 }
 
 div#projetos-area div.card img {
@@ -303,33 +317,43 @@ div#projetos-area div.card-body p.card-text {
 }
 
 div#projetos-area .btn.btn-primary {
-    padding: 10px; border-radius: 20px; width: 100px; font-weight: 500; font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 25px;
     transition: all .3s ease-in-out;
+    background-color: var(--cor-primaria);
+    border: none;
 }
-
-
 
 /*-------- CONTATO --------*/
 
 div#contato-area {
-    background: linear-gradient(to bottom, #061323, #0a1b38, #0d2250, #0e254a);
-    padding: 150px 0 100px;
-    min-height: 100vh;
+    background-color: var(--background);
     display: flex;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+
 }
 
-div#contato-area div.form-group input, div#contato-area div.form-group #mensagem {
-    border: 1px solid #34a0d6;
+div#contato-area div.form-group input,
+div#contato-area div.form-group #mensagem {
+    border: 1px solid var(--cor-primaria);
     border-radius: 10px;
     background-color: transparent;
     color: white;
-    
+
 }
 
-#nome::placeholder, #email::placeholder, #mensagem::placeholder {
+div#contato-area .btn.btn-primary {
+    background-color: var(--cor-primaria);
+    border: none;
+}
+
+#nome::placeholder,
+#email::placeholder,
+#mensagem::placeholder {
     color: rgba(255, 255, 255, 0.795);
 }
 
@@ -337,7 +361,8 @@ div#contato-area div.form-group input, div#contato-area div.form-group #mensagem
 /*----- FOOTER -----*/
 
 footer {
-    background-color: #061323;
+    margin-top: 50px;
+    background-color: var(--background);
     padding-bottom: 1px;
     padding-top: 25px;
 }
@@ -346,16 +371,19 @@ footer ul {
     display: flex;
     gap: 20px;
     justify-content: center;
+    align-items: center;
     margin-bottom: 15px;
     
 }
 
 footer ul img {
-    width: 30px;
+    width: 40px;
+    filter: invert(1);
     margin-top: 0px;
     transition: .3s all ease-in-out;
     text-align: center;
-
+    
+    
 }
 
 footer ul img:hover {
@@ -365,4 +393,14 @@ footer ul img:hover {
 footer p.descricao-footer {
     font-weight: 400;
     color: white;
+}
+
+/*----- FOOTER -----*/
+
+a#botao-voltar-home {
+    position: fixed;
+    right: 0;
+    font-size: 25px;
+    bottom: 0;
+    padding: 20px;
 }

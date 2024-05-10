@@ -19,7 +19,6 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
-
     <!--Script do popper-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -52,7 +51,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
+    <!-- Link para lib de icons do bootstrap -->
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="src/CSS/style.css">
     <link rel="stylesheet" href="src/CSS/reset.css">
@@ -67,14 +68,14 @@
 
     <header>
 
-        <div class="container" id="nav-container">
+        <div class="container-fluid" id="nav-container">
 
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <nav class="navbar navbar-expand-lg">
 
                 <a href="#" class="navbar-brand" id="link-brand">
 
                     <img src="src/images/logo-image.png" alt="logo principal do site" id="logo">
-                    <p id="titulo-principal"><strong>Tássio</strong></p>
+
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
@@ -118,20 +119,20 @@
                         <abbr title="Linkedin">
 
                             <li><a href="https://www.linkedin.com/in/tassiofernandes26/" target="_blank"
-                                    rel="external"><img src="src/images/linkedin-logo.png"
+                                    rel="external"><img class="img-fluid" src="src/images/linkedin-logo.png"
                                         alt="logo da rede social linkedin"></img></a></li>
 
                         </abbr>
 
                         <abbr title="Github">
                             <li><a href="https://github.com/26Tassiofernandes" target="_blank" rel="external"><img
-                                        style="filter: invert(1);" src="src/images/github-logo.svg"
+                                        class="img-fluid" style="width: 35px;" src="src/images/github-logo.png"
                                         alt="logo da rede social github"></img></a></li>
                         </abbr>
 
                         <abbr title="Instagram">
                             <li><a href="https://instagram.com/26tassio" target="_blank" rel="external"><img
-                                        src="src/images/instagram-logo.svg"
+                                        class="img-fluid" src="src/images/instagram-logo.png"
                                         alt="logo da rede social instagram"></img></a></li>
                         </abbr>
 
@@ -140,7 +141,8 @@
 
                     <div class="botao-baixar-cv">
 
-                        <a download href="src/arquivos/curriculo.pdf" class="btn btn-primary">Baixar CV</a>
+                        <a download href="src/arquivos/curriculo.pdf" class="btn btn-primary"><i
+                                style="margin-right: 10px;" class="bi bi-download"></i>Baixar CV </a>
 
                     </div>
 
@@ -148,8 +150,8 @@
 
                 <div class="col-md-6" class="informacoes">
 
-                    <img class="img-fluid" style="height: 95%; width: 450px; transform: scale(1.2);" src="src/images/ilustracao-home-page.webp"
-                        alt="Personagem da imagem da homepage na mesa">
+                    <img id="imagem-homepage" class="img-fluid mx-auto d-block" style="width: 360px; border-radius: 50%;"
+                        src="src/images/foto-homepage.png" alt="Personagem da imagem da homepage na mesa">
 
                 </div>
 
@@ -163,24 +165,35 @@
 
     <div id="sobre-mim-area">
 
-        <div class="container">
+        <div class="container-fluid">
 
             <div class="row">
 
-                <div class="col-md-6" class="informacoes">
-                    <img class="img-fluid" data-aos="slide-right" data-aos-delay="300" style="height: 100%;" src="src/images/ilustracao-about-me.webp"
-                        alt="Ilustração de um personagem programando">
+                <div class="col-md-6 mx-auto" class="informacoes">
+
+                    <img class="img-fluid d-block mx-auto" data-aos="slide-right" data-aos-delay="300"
+                        style="width: 400px; height: 100%; border-radius: 50%; margin: 0 auto; object-fit: cover;"
+                        src="src/images/foto-sobre-mim(2).png" alt="Ilustração de um personagem programando">
 
                 </div>
 
                 <div class="col-md-6" class="informacoes" data-aos="slide-left">
+
                     <h3 class="about-title">Sobre mim</h3>
-                    <p class="descricao">Sou um estudante de Bacharelado em Ciência da Computação na Universidade
+
+                    <p class="descricao">Sou um estudante de Ciência da Computação na Universidade
                         Federal do Amapá (Unifap) e também estagiário de Sistemas no Tribunal de Justiça do Estado do
                         Amapá (TJAP). Tenho um grande interesse pela área de programação, construção de softwares e
                         Desenvolvimento Web.</p>
-                    <p class="descricao">Como desenvolvedor web apaixonado, concentro-me em transformar ideias em soluções digitais incríveis. Minha jornada na programação é marcada pela busca constante por conhecimento, tendo habilidades em Python, Java, HTML5, CSS3, JavaScript, TypeScript, SQL. Ademais, tenho experiência em frameworks como Flask, Spring Boot e bibliotecas como Bootstrap, desenvolvendo aplicações robustas e visualmente atraentes.</p>
-                    <p class="descricao">Estou animado para compartilhar meu conhecimento e experiência com todos vocês. Vamos explorar juntos o mundo da tecnologia e alcançar grandes realizações! Sua participação é fundamental, e estou ansioso para trocar ideias e aprendizados ao longo desse caminho. Vamos seguir em frente e construir algo incrível juntos!</p>
+
+                    <p class="descricao">Minha jornada na programação é marcada pela busca constante por conhecimento,
+                        tendo habilidades em Python, Java, HTML5, CSS3, JavaScript, PHP, SQL. Ademais, tenho experiência
+                        em frameworks como Flask, Spring Boot e bibliotecas como Bootstrap, desenvolvendo aplicações
+                        robustas e visualmente atraentes.</p>
+
+                    <p class="descricao">Estou empolgado para compartilhar meu conhecimento e experiência. Vamos
+                        explorar juntos o mundo da tecnologia e alcançar grandes feitos. Vamos construir algo incrível!
+                    </p>
 
                 </div>
 
@@ -210,8 +223,7 @@
                     <i class="fab fa-python" class="icones-tecnologias">
 
                         <h4>Python</h4>
-                        <p>Linguagem versátil e fácil de aprender, amplamente utilizada em desenvolvimento web,
-                            automação e inteligência artificial.</p>
+                        <!-- <p>Linguagem versátil e fácil de aprender, amplamente usada em web, automação e inteligência artificial.</p> -->
 
                     </i>
 
@@ -224,8 +236,7 @@
                     <i class="fab fa-html5">
 
                         <h4>HTML5</h4>
-                        <p>Linguagem de marcação fundamental para estruturar conteúdo em páginas web e deixá-las
-                            interativas e responsivas.</p>
+                        <!-- <p>Marcação fundamental para estruturar conteúdo em páginas web, tornando-as interativas e responsivas.</p> -->
 
                     </i>
 
@@ -238,8 +249,7 @@
                     <i class="fab fa-css3">
 
                         <h4>CSS3</h4>
-                        <p>Responsável pela estilização e apresentação visual em páginas web, proporcionando uma
-                            experiência visual atraente aos usuários.</p>
+                        <!-- <p>Responsável pela estilização visual em páginas web, proporcionando uma experiência atraente aos usuários.</p> -->
 
                     </i>
 
@@ -253,8 +263,7 @@
                     <i class="fab fa-js-square">
 
                         <h4>JavaScript</h4>
-                        <p>É uma linguagem de programação do lado do cliente amplamente usada para tornar as páginas web
-                            interativas.</p>
+                        <!-- <p>Linguagem de programação do lado do cliente para tornar páginas web interativas.</p> -->
 
                     </i>
 
@@ -268,8 +277,19 @@
                     <i class="fab fa-java">
 
                         <h4>Java</h4>
-                        <p>Linguagem orientada a objetos, conhecida por sua portabilidade e ampla aplicação em
-                            desenvolvimento empresarial e móvel.</p>
+                        <!-- <p>Linguagem orientada a objetos, conhecida por sua portabilidade e aplicação em desenvolvimento empresarial e móvel.</p> -->
+
+                    </i>
+
+                </div>
+
+                <!-- PHP-->
+                
+                <div class="col-md-4 service-box">
+
+                    <i class="fab fa-php">
+
+                        <h4>PHP</h4>
 
                     </i>
 
@@ -283,8 +303,7 @@
                     <i class="fab fa-bootstrap">
 
                         <h4>Bootstrap</h4>
-                        <p>Frameworkd front-end usado para o desenvolvimento de designs atraentes e responsivos para
-                            sites e aplicativos web. </p>
+                        <!-- <p>Framework front-end para designs atraentes e responsivos em sites e aplicativos web.</p> -->
 
                     </i>
 
@@ -297,8 +316,7 @@
                     <i class="fas fa-database">
 
                         <h4>Banco de dados</h4>
-                        <p>Bancos de dados são essenciais para armazenar, organizar e recuperar informações, permitindo
-                            a manipulação eficiente de dados em aplicações.</p>
+                        <!-- <p>Essenciais para armazenar, organizar e recuperar informações, permitindo a manipulação eficiente de dados em aplicações.</p> -->
 
                     </i>
 
@@ -311,8 +329,7 @@
                     <i class="fab fa-github">
 
                         <h4>Github</h4>
-                        <p>GitHub é uma plataforma de hospedagem de código-fonte que facilita o trabalho colaborativo em
-                            projetos de desenvolvimento de software.</p>
+                        <!-- <p>Plataforma de hospedagem de código-fonte que facilita o trabalho colaborativo em projetos de software.</p> -->
 
                     </i>
 
@@ -325,8 +342,31 @@
                     <i class="fab fa-git-alt">
 
                         <h4>Git</h4>
-                        <p>Sistema de controle de versão distribuído, usado para rastrear alterações no código-fonte
-                            durante o desenvolvimento de software.</p>
+                        <!-- <p>Sistema de controle de versão distribuído para rastrear alterações no código-fonte durante o desenvolvimento de software.</p> -->
+
+                    </i>
+
+                </div>
+
+                <!-- RPA-->
+                
+                <div class="col-md-4 service-box">
+
+                    <i class="fas fa-robot">
+
+                        <h4>RPA</h4>
+
+                    </i>
+
+                </div>
+
+                <!-- WEB SCRAPING -->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="fas fa-globe">
+
+                        <h4>Web Scraping</h4>
 
                     </i>
 
@@ -348,27 +388,40 @@
 
                 <div class="col-12">
 
-                    <h3 class="experiencia-title" style="text-align: center; color: white;"><strong>Experiência</strong></h3> <br><br>
+                    <h3 class="experiencia-title" style="text-align: center; color: white;"><strong>Experiência</strong>
+                    </h3> <br><br>
 
                 </div>
 
                 <div class="container container-experiencia" data-aos="slide-right"> <!-- PRIMEIRO CONTAINER -->
 
-                    <h3 class="titulo-experiencias"><strong><a href="https://www.linkedin.com/company/tjap-oficial/" target="_blank" rel="external"><i class="bi bi-building-fill"></i>Tribunal de Justiça do Estado do Amapá</a></strong></h3> <br>
-                    <p class="descricao-experiencia"><strong>Função</strong>: Atuo como estagiário de Desenvolvimento Web no Tribunal de Justiça do Estado do Amapá, estando envolvido no desenvolvimento e implementação de aplicações back-end, seguindo práticas de programação modernas para atender às demandas específicas da organização.</p>
-                    <p class="descricao-experiencia"><strong>Competências</strong>: API REST · JPA (Java Persistence API) · Postman API ·
-                        Algoritmos · Programação (computação) · SQL · Java · Banco de dados</p>
+                    <h3 class="titulo-experiencias"><strong><a href="https://www.linkedin.com/company/tjap-oficial/"
+                                target="_blank" rel="external"><i style="margin-right: 10px;"
+                                    class="bi bi-building-fill"></i>Tribunal de Justiça do Estado do Amapá</a></strong>
+                    </h3> <br>
+                    <p class="descricao-experiencia"><strong>Função</strong>: Atua como estagiário de Desenvolvimento
+                        Web no Tribunal de Justiça do Estado do Amapá, estando envolvido no desenvolvimento e
+                        implementação de aplicações back-end e front-end do sistema jurídico, aplicando práticas de programação modernas para
+                        atender às demandas específicas da empresa.</p>
+                    <p class="descricao-experiencia"><strong>Competências</strong>: API REST · JPA (Java Persistence
+                        API) · Postman API ·
+                        Algoritmos · Programação (computação) · SQL · Java · PHP · Banco de dados</p>
                     <p class="descricao-experiencia"><i class="fas fa-check"></i>2023 - Presente</p>
 
                 </div>
 
-
                 <div class="container container-experiencia" data-aos="slide-left"> <!-- SEGUNDO CONTAINER -->
 
-                    <h2 class="titulo-experiencias"><strong><a href="https://www.linkedin.com/company/universidade-federal-do-amapá-unifap/" target="_blank" rel="external">Universidade Federal do Amapá</a></strong></h2> <br>
-                    <p class="descricao-experiencia"><strong>Função</strong>: Atua como estudante de Bacharelado em Ciência da Computação na Unifap, atualmente está no 8°
-                    semestre.</p>
-                    <p class="descricao-experiencia"><strong>Competências</strong>: Programação · Desenvolvimento de Software · Banco de
+                    <h2 class="titulo-experiencias"><strong><a
+                                href="https://www.linkedin.com/company/universidade-federal-do-amapá-unifap/"
+                                target="_blank" rel="external"><i style="margin-right: 10px;"
+                                    class="bi bi-mortarboard-fill"></i>Universidade Federal do Amapá</a></strong></h2>
+                    <br>
+                    <p class="descricao-experiencia"><strong>Função</strong>: Atua como estudante de Bacharelado em
+                        Ciência da Computação na Unifap, atualmente está no 8°
+                        semestre.</p>
+                    <p class="descricao-experiencia"><strong>Competências</strong>: Programação · Desenvolvimento de
+                        Software · Banco de
                         Dados · Redes de Computadores · Sistemas Operacionais · IA e Machine Learning ·
                         Computação em Nuvem · Gerenciamento de Projetos</p>
                     <p class="descricao-experiencia"><i class="fas fa-check"></i>2021 - Presente</p>
@@ -400,7 +453,7 @@
                 <div id="mainSlider" class="carousel slide" data-bs-ride="carousel" style="transform: scale(0.80);">
 
                     <div class="carousel-inner" data-aos="fade-in" data-aos-delay="200">
-                    
+
                         <!----- PRIMEIRO CARD / PLANTEL LIVERPOOL ----->
 
                         <div class="carousel-item active">
@@ -409,16 +462,19 @@
 
                                 <div class="card">
 
-                                    <img src="src/images/imagem-plantel-liverpool.png" alt="Primeiro card" class="card-img-top img-fluid">
+                                    <img src="src/images/imagem-plantel-liverpool.png" alt="Primeiro card"
+                                        class="card-img-top img-fluid">
 
                                     <div class="card-body">
 
                                         <h5 class="card-title">Plantel Liverpool</h5> <br>
 
                                         <a href="https://github.com/26Tassiofernandes/plantelliverpool" target="_blank"
-                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a>
+                                        <br><br>
                                         <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-1"
-                                            role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+                                            role="button" aria-expanded="false" aria-controls="collapseExample"
+                                            style="width: 100%;">Ver descrição</a>
 
                                         <div class="collapse" id="descricao-card-1"> <br>
 
@@ -443,20 +499,24 @@
 
                                 <div class="card">
 
-                                    <img src="src/images/webscraping.png" alt="Segundo card" class="card-img-top img-fluid">
+                                    <img src="src/images/webscraping.png" alt="Segundo card"
+                                        class="card-img-top img-fluid">
 
                                     <div class="card-body">
 
                                         <h5 class="card-title">Web Scraping de dados climáticos</h5> <br>
 
-                                        <a href="https://github.com/26Tassiofernandes/web-scraping-clima" target="_blank"
-                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                                        <a href="https://github.com/26Tassiofernandes/web-scraping-clima"
+                                            target="_blank" rel="external" class="btn btn-primary"
+                                            style="width: 100%;">Visitar</a> <br><br>
                                         <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-2"
-                                            role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+                                            role="button" aria-expanded="false" aria-controls="collapseExample"
+                                            style="width: 100%;">Ver descrição</a>
 
                                         <div class="collapse" id="descricao-card-2"> <br>
 
-                                            <p class="card-text">Um código que faz uso do Web Scraping com Selenium para extrair dados de um site climático.</p>
+                                            <p class="card-text">Um código que faz uso do Web Scraping com Selenium para
+                                                extrair dados de um site climático.</p>
 
                                         </div>
 
@@ -484,13 +544,17 @@
                                         <h5 class="card-title">API de cotações</h5> <br>
 
                                         <a href="https://github.com/26Tassiofernandes/api-cotacoes" target="_blank"
-                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
-                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-cotacoes"
-                                            role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a>
+                                        <br><br>
+                                        <a class="btn btn-primary" data-bs-toggle="collapse"
+                                            href="#descricao-card-cotacoes" role="button" aria-expanded="false"
+                                            aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
 
                                         <div class="collapse" id="descricao-card-cotacoes"> <br>
 
-                                            <p class="card-text">Este projeto envolve o desenvolvimento de um script que faz uma requisição a uma API e retorna as cotações das principais moedas do mercado.</p>
+                                            <p class="card-text">Este projeto envolve o desenvolvimento de um script que
+                                                faz uma requisição a uma API e retorna as cotações das principais moedas
+                                                do mercado.</p>
 
                                         </div>
 
@@ -510,21 +574,25 @@
 
                                 <div class="card">
 
-                                    <img src="src/images/projeto-terror.png" alt="Terceiro card" class="card-img-top img-fluid">
+                                    <img src="src/images/projeto-terror.png" alt="Terceiro card"
+                                        class="card-img-top img-fluid">
 
                                     <div class="card-body">
 
                                         <h5 class="card-title">Projeto terror</h5> <br>
 
                                         <a href="https://26tassiofernandes.github.io/projeto-terror/" target="_blank"
-                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a>
+                                        <br><br>
                                         <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-3"
                                             role="button" aria-expanded="false" aria-controls="collapseExample"
                                             style="width: 100%;">Ver descrição</a>
 
                                         <div class="collapse" id="descricao-card-3"><br>
 
-                                            <p class="card-text">O projeto de terror apresenta uma interface envolvente,destacando os principais personagens fictícios do cinema nesse gênero.</p>
+                                            <p class="card-text">O projeto de terror apresenta uma interface
+                                                envolvente,destacando os principais personagens fictícios do cinema
+                                                nesse gênero.</p>
 
                                         </div>
 
@@ -544,21 +612,25 @@
 
                                 <div class="card">
 
-                                    <img src="src/images/tela-login-animada.png" alt="Quarto card" class="card-img-top img-fluid">
+                                    <img src="src/images/tela-login-animada.png" alt="Quarto card"
+                                        class="card-img-top img-fluid">
 
                                     <div class="card-body">
 
                                         <h5 class="card-title">Tela de login</h5> <br>
 
-                                        <a href="https://26tassiofernandes.github.io/tela-login-animada/" target="_blank"
-                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                                        <a href="https://26tassiofernandes.github.io/tela-login-animada/"
+                                            target="_blank" rel="external" class="btn btn-primary"
+                                            style="width: 100%;">Visitar</a> <br><br>
                                         <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-4"
                                             role="button" aria-expanded="false" aria-controls="collapseExample"
                                             style="width: 100%;">Ver descrição</a>
 
                                         <div class="collapse" id="descricao-card-4"> <br>
 
-                                            <p class="card-text">Tela interativa de login e cadastro com animações suaves e layout adaptável, proporcionando uma experiência moderna e prática.</p>
+                                            <p class="card-text">Tela interativa de login e cadastro com animações
+                                                suaves e layout adaptável, proporcionando uma experiência moderna e
+                                                prática.</p>
 
                                         </div>
 
@@ -586,13 +658,16 @@
                                         <h5 class="card-title">Projeto X-men</h5> <br>
 
                                         <a href="https://26tassiofernandes.github.io/projeto-x-men/" target="_blank"
-                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a>
+                                        <br><br>
                                         <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-5"
-                                            role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+                                            role="button" aria-expanded="false" aria-controls="collapseExample"
+                                            style="width: 100%;">Ver descrição</a>
 
                                         <div class="collapse" id="descricao-card-5"> <br>
 
-                                            <p class="card-text">Interface interativa para selecionar personagens do X-men, com imagens e descrições.</p>
+                                            <p class="card-text">Interface interativa para selecionar personagens do
+                                                X-men, com imagens e descrições.</p>
 
                                         </div>
 
@@ -603,7 +678,7 @@
                             </div>
 
                         </div>
-                        
+
                         <!---- SEXTO CARD / MINI PORTFÓLIO ---->
 
                         <div class="carousel-item">
@@ -620,13 +695,16 @@
                                         <h5 class="card-title">Mini Portfólio</h5> <br>
 
                                         <a href="https://26tassiofernandes.github.io/mini-portfolio/" target="_blank"
-                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a>
+                                        <br><br>
                                         <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-6"
-                                            role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+                                            role="button" aria-expanded="false" aria-controls="collapseExample"
+                                            style="width: 100%;">Ver descrição</a>
 
                                         <div class="collapse" id="descricao-card-6"> <br>
 
-                                            <p class="card-text">Mini portfólio com interface encantadora e responsiva, incluindo detalhes de pixel art para uma experiência visual única.</p>
+                                            <p class="card-text">Mini portfólio com interface encantadora e responsiva,
+                                                incluindo detalhes de pixel art para uma experiência visual única.</p>
 
                                         </div>
 
@@ -654,13 +732,17 @@
                                         <h5 class="card-title">Projeto Cordel</h5> <br>
 
                                         <a href="https://26tassiofernandes.github.io/projeto-cordel/" target="_blank"
-                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a>
+                                        <br><br>
                                         <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-7"
-                                            role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+                                            role="button" aria-expanded="false" aria-controls="collapseExample"
+                                            style="width: 100%;">Ver descrição</a>
 
                                         <div class="collapse" id="descricao-card-7"> <br>
 
-                                            <p class="card-text">Poema inspirado na música 'A Vida de um Viajante' de Luiz Gonzaga, apresentando versos em estilo cordel com um efeito parallax envolvente.</p>
+                                            <p class="card-text">Poema inspirado na música 'A Vida de um Viajante' de
+                                                Luiz Gonzaga, apresentando versos em estilo cordel com um efeito
+                                                parallax envolvente.</p>
 
                                         </div>
 
@@ -687,14 +769,18 @@
 
                                         <h5 class="card-title">Calculadora de IMC</h5> <br>
 
-                                        <a href="https://26tassiofernandes.github.io/Calculador-de-IMC/imc.html" target="_blank"
-                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a> <br><br>
+                                        <a href="https://26tassiofernandes.github.io/Calculador-de-IMC/imc.html"
+                                            target="_blank" rel="external" class="btn btn-primary"
+                                            style="width: 100%;">Visitar</a> <br><br>
                                         <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-8"
-                                            role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
+                                            role="button" aria-expanded="false" aria-controls="collapseExample"
+                                            style="width: 100%;">Ver descrição</a>
 
                                         <div class="collapse" id="descricao-card-8"> <br>
 
-                                            <p class="card-text">Calculadora de IMC que aceita entrada de altura e peso para determinar o índice de massa corporal, oferecendo uma solução direta e eficiente.</p>
+                                            <p class="card-text">Calculadora de IMC que aceita entrada de altura e peso
+                                                para determinar o índice de massa corporal, oferecendo uma solução
+                                                direta e eficiente.</p>
 
                                         </div>
 
@@ -711,16 +797,20 @@
 
                         <div class="setas-carrossel">
 
-                            <button class="btn btn-primary carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev" style="width: 50px; height: 50px; top: 50%; border-radius: 50px;">
+                            <button class="btn btn-primary carousel-control-prev" type="button"
+                                data-bs-target="#mainSlider" data-bs-slide="prev"
+                                style="width: 50px; height: 50px; top: 50%; border-radius: 50px; background-color: transparent;">
                                 <i class="fas fa-chevron-left"></i>
                             </button>
-                            
-                            <button class="btn btn-primary carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next" style="width: 50px; height: 50px; top: 50%; border-radius: 50px;">
+
+                            <button class="btn btn-primary carousel-control-next" type="button"
+                                data-bs-target="#mainSlider" data-bs-slide="next"
+                                style="width: 50px; height: 50px; top: 50%; border-radius: 50px; background-color: transparent">
                                 <i class="fas fa-chevron-right"></i>
                             </button>
-                            
+
                         </div>
-                        
+
 
                     </div>
 
@@ -742,16 +832,17 @@
 
                 <div class="col-12">
 
-                    <h3 class="contato-title" style="text-align: center; margin-bottom: 100px; color: white;"><strong>Contato</strong>
+                    <h3 class="contato-title" style="text-align: center; color: white; padding: 50px;">
+                        <strong>Contato</strong>
                     </h3>
 
                 </div>
 
-                <div class="col-md-6" style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+                <div class="col-md-6 mx-auto">
                     <!-- A classe img-fluid deixa a imagem responsiva e adaptável para diferentes tipos de tela -->
-                    <img class="img-fluid" data-aos="slide-right" style="margin-bottom: 90px;" src="src/images/ilustracao-contato.webp"
+                    <img class="img-fluid mx-auto d-block" data-aos="slide-right"
+                        style="border-radius: 50%; width: 300px; padding: 20px;" src="src/images/foto-contato.png"
                         alt="Imagem ilustrativa de contato">
-
 
                 </div>
 
@@ -766,22 +857,22 @@
 
                         <div class="form-group"> <!-- NOME -->
 
-                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome"
-                                required>
+                            <input type="text" class="form-control" style="box-shadow: none;" name="nome" id="nome"
+                                placeholder="Seu nome" required>
 
                         </div> <br>
 
                         <div class="form-group"> <!-- Email -->
 
-                            <input type="text" class="form-control" name="email" id="email" placeholder="Seu e-mail"
-                                required>
+                            <input type="text" class="form-control" style="box-shadow: none;" name="email" id="email"
+                                placeholder="Seu e-mail" required>
 
                         </div> <br>
 
                         <div class="form-group"> <!-- Mensagem -->
 
-                            <textarea class="form-control" name="mensagem" id="mensagem" rows="5"
-                                placeholder="Digite sua mensagem" required></textarea>
+                            <textarea class="form-control" style="box-shadow: none;" name="mensagem" id="mensagem"
+                                rows="5" placeholder="Digite sua mensagem" required></textarea>
 
                         </div> <br>
 
@@ -800,6 +891,7 @@
 
     <!------- FOOTER / RODAPÉ ------>
 
+    <hr>
     <footer class="footer">
 
         <div class="container">
@@ -809,33 +901,40 @@
                 <abbr title="Linkedin">
 
                     <li><a href="https://www.linkedin.com/in/tassiofernandes26/" target="_blank" rel="external"><img
-                                src="src/images/linkedin-logo.png" alt="logo da rede social linkedin"></img></a></li>
+                                class="img-fluid" src="src/images/linkedin-logo.png"
+                                alt="logo da rede social linkedin"></img></a></li>
 
                 </abbr>
 
                 <abbr title="Github">
                     <li><a href="https://github.com/26Tassiofernandes" target="_blank" rel="external"><img
-                                style="filter: invert(1);" src="src/images/github-logo.svg"
+                                class="img-fluid" style="width: 30px;" src="src/images/github-logo.png"
                                 alt="logo da rede social github"></img></a></li>
                 </abbr>
 
                 <abbr title="Instagram">
-                    <li><a href="https://instagram.com/26tassio" target="_blank" rel="external"><img
-                                src="src/images/instagram-logo.svg" alt="logo da rede social instagram"></img></a></li>
+                    <li><a href="https://instagram.com/26tassio" target="_blank" rel="external"><img class="img-fluid"
+                                src="src/images/instagram-logo.png" alt="logo da rede social instagram"></img></a></li>
                 </abbr>
-
 
             </ul>
 
             <div class="informacoes-copyright">
 
-                <p class="descricao-footer" style="text-align: center;">Copyright © 2024, Tássio Fernandes. All Rights Reserved</p>
+                <p class="descricao-footer" style="text-align: center;">Copyright © 2024, Tássio Fernandes. All Rights
+                    Reserved</p>
 
             </div>
 
         </div>
 
     </footer>
+
+    <a id="botao-voltar-home" href="#"><i style="color: var(--cor-primaria);" class="bi bi-arrow-up-circle-fill"></i></a>
+
+    
+
     <script src="src/JS/script.js"></script>
 </body>
+
 </html>

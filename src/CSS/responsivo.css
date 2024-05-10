@@ -7,28 +7,24 @@
     }
 
     div#home-area {
-        padding-bottom: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: calc(100vh - 100px);
     }
 
     div#home-area h1.nome {
-        font-size: 50px;
+        font-size: 60px;
         
     }
 
     div#home-area p.descricao-profissao {
-        font-size: 30px;
+        font-size: 40px;
 
     }
 
     div#home-area ul.lista-redes-sociais img {
-        width: 35px;
-    }
-
-    img#ilustracao-homepage {
-        width: 350px;
+        width: 45px;
     }
 
 }
@@ -42,11 +38,19 @@
     /* ---- HOMEPAGE ---- */
 
     div#home-area {
-        padding-bottom: 35vh;
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: baseline;
+        min-height: calc(100vh - 100px);
     }
 
-    div#home-area .img-fluid {
+    div#home-area #imagem-homepage {
         display: none;
+    }
+
+    #imagem-homepage.d-block {
+        display: none !important; /* Garante que a classe d-block não sobrescreva a configuração na media query */
     }
 
     div#home-area .col-md-6 { /*Refere a descrição, profissao, redes sociais e botao de curriculo*/
@@ -92,8 +96,6 @@
     div#projetos-area div.card-body p.card-text {
         font-size: 19px;
     }
-
-    
 }
 
 @media (max-width:497px) {
@@ -105,4 +107,5 @@
     div#experiencia-area .container-experiencia {
         width: 300px;
     }
+
 }
