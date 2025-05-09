@@ -194,7 +194,10 @@ div#skills-area h3.skills-title {
 }
 
 div.col-md-4.service-box i.fab,
-div.col-md-4.service-box i.fas {
+div.col-md-4.service-box i.fas,
+div.col-md-4.service-box i.devicon-tailwindcss-original, 
+div.col-md-4.service-box i.devicon-nextjs-plain
+{
     /*ícones dos cursos*/
     display: flex;
     flex-direction: column;
@@ -207,7 +210,9 @@ div.col-md-4.service-box i.fas {
 }
 
 div i.fab h4,
-div i.fas h4 {
+div i.fas h4,
+div i.devicon-tailwindcss-original h4,
+div i.devicon-nextjs-plain h4 {
     /*Título dos cursos*/
     font-family: 'Saira Condensed', sans-serif;
     margin-top: 10px;
@@ -217,7 +222,9 @@ div i.fas h4 {
 
 div.col-md-4.service-box i.fab:hover,
 div.col-md-4.service-box i.fas:hover,
-div.col-md-4.service-box i.fab h4:hover {
+div.col-md-4.service-box i.fab h4:hover,
+div.col-md-4.service-box i.devicon-nextjs-plain:hover,
+div.col-md-4.service-box i.devicon-tailwindcss-original:hover {
     color: var(--cor-primaria);
     transition: all .5s;
 }

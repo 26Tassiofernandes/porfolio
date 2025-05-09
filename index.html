@@ -54,6 +54,8 @@
     <!-- Link para lib de icons do bootstrap -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
 
     <link rel="stylesheet" href="src/CSS/style.css">
     <link rel="stylesheet" href="src/CSS/reset.css">
@@ -141,7 +143,7 @@
 
                     <div class="botao-baixar-cv">
 
-                        <a download href="src/arquivos/curriculo-vitae.pdf" class="btn btn-primary"><i
+                        <a download href="src/arquivos/Curriculo-tassio-FrontEnd.pdf" class="btn btn-primary"><i
                                 style="margin-right: 10px;" class="bi bi-download"></i>Baixar CV </a>
 
                     </div>
@@ -150,8 +152,9 @@
 
                 <div class="col-md-6" class="informacoes">
 
-                    <img id="imagem-homepage" class="img-fluid mx-auto d-block" style="width: 360px; border-radius: 50%;"
-                        src="src/images/foto-homepage.png" alt="Personagem da imagem da homepage na mesa">
+                    <img id="imagem-homepage" class="img-fluid mx-auto d-block"
+                        style="width: 360px; border-radius: 50%;" src="src/images/foto-homepage.png"
+                        alt="Personagem da imagem da homepage na mesa">
 
                 </div>
 
@@ -182,17 +185,17 @@
                     <h3 class="about-title">Sobre mim</h3>
 
                     <p class="descricao">Sou um estudante de Ciência da Computação na Universidade
-                        Federal do Amapá (Unifap) e também estagiário de Sistemas no Tribunal de Justiça do Estado do
+                        Federal do Amapá (UNIFAP) e também estagiário de Desenvolvimento Web no Tribunal de Justiça do
+                        Estado do
                         Amapá (TJAP). Tenho um grande interesse pela área de programação, construção de softwares e
                         Desenvolvimento Web.</p>
 
                     <p class="descricao">Minha jornada na programação é marcada pela busca constante por conhecimento,
-                        tendo habilidades em Python, Java, HTML5, CSS3, JavaScript, PHP, SQL. Ademais, tenho experiência
-                        em frameworks como Flask, Spring Boot e bibliotecas como Bootstrap, desenvolvendo aplicações
-                        robustas e visualmente atraentes.</p>
+                        tendo experiência prática com Python, RPA, Banco de Dados, HTML, CSS, JavaScript e frameworks
+                        modernos como React e Next, além de conhecimentos em Bootstrap e Tailwind.</p>
 
                     <p class="descricao">Estou empolgado para compartilhar meu conhecimento e experiência. Vamos
-                        explorar juntos o mundo da tecnologia e alcançar grandes feitos. Vamos construir algo incrível!
+                        explorar juntos o mundo da tecnologia, alcançar grandes feitos e construir algo incrível!
                     </p>
 
                 </div>
@@ -220,7 +223,7 @@
 
                 <div class="col-md-4 service-box">
 
-                    <i class="fab fa-python" class="icones-tecnologias">
+                    <i class="fab fa-python">
 
                         <h4>Python</h4>
                         <!-- <p>Linguagem versátil e fácil de aprender, amplamente usada em web, automação e inteligência artificial.</p> -->
@@ -263,38 +266,36 @@
                     <i class="fab fa-js-square">
 
                         <h4>JavaScript</h4>
-                        <!-- <p>Linguagem de programação do lado do cliente para tornar páginas web interativas.</p> -->
 
                     </i>
 
                 </div>
 
 
-                <!--- JAVA --->
+                <!--- REACT --->
 
                 <div class="col-md-4 service-box">
 
-                    <i class="fab fa-java">
+                    <i class="fab fa-react">
 
-                        <h4>Java</h4>
-                        <!-- <p>Linguagem orientada a objetos, conhecida por sua portabilidade e aplicação em desenvolvimento empresarial e móvel.</p> -->
+                        <h4>React .js</h4>
 
                     </i>
 
                 </div>
 
-                <!-- PHP-->
-                
+                <!-- NEXT-->
+
                 <div class="col-md-4 service-box">
 
-                    <i class="fab fa-php">
 
-                        <h4>PHP</h4>
+                    <i class="devicon-nextjs-plain">
+
+                        <h4>Next .js</h4>
 
                     </i>
 
                 </div>
-
 
                 <!-- BOOTSTRAP --->
 
@@ -303,7 +304,19 @@
                     <i class="fab fa-bootstrap">
 
                         <h4>Bootstrap</h4>
-                        <!-- <p>Framework front-end para designs atraentes e responsivos em sites e aplicativos web.</p> -->
+
+                    </i>
+
+                </div>
+
+
+                <!--Tailwind-->
+
+                <div class="col-md-4 service-box">
+
+                    <i class="devicon-tailwindcss-original">
+
+                        <h4>Tailwind CSS</h4>
 
                     </i>
 
@@ -316,20 +329,6 @@
                     <i class="fas fa-database">
 
                         <h4>Banco de dados</h4>
-                        <!-- <p>Essenciais para armazenar, organizar e recuperar informações, permitindo a manipulação eficiente de dados em aplicações.</p> -->
-
-                    </i>
-
-                </div>
-
-                <!--GITHUB-->
-
-                <div class="col-md-4 service-box">
-
-                    <i class="fab fa-github">
-
-                        <h4>Github</h4>
-                        <!-- <p>Plataforma de hospedagem de código-fonte que facilita o trabalho colaborativo em projetos de software.</p> -->
 
                     </i>
 
@@ -342,14 +341,13 @@
                     <i class="fab fa-git-alt">
 
                         <h4>Git</h4>
-                        <!-- <p>Sistema de controle de versão distribuído para rastrear alterações no código-fonte durante o desenvolvimento de software.</p> -->
 
                     </i>
 
                 </div>
 
                 <!-- RPA-->
-                
+
                 <div class="col-md-4 service-box">
 
                     <i class="fas fa-robot">
@@ -393,7 +391,7 @@
 
                 </div>
 
-                <div class="container container-experiencia" data-aos="slide-right"> <!-- PRIMEIRO CONTAINER -->
+                <div class="container container-experiencia" data-aos="slide-right" data-aos-duration="700"> <!-- PRIMEIRO CONTAINER -->
 
                     <h3 class="titulo-experiencias"><strong><a href="https://www.linkedin.com/company/tjap-oficial/"
                                 target="_blank" rel="external"><i style="margin-right: 10px;"
@@ -401,7 +399,8 @@
                     </h3> <br>
                     <p class="descricao-experiencia"><strong>Função</strong>: Atua como estagiário de Desenvolvimento
                         Web no Tribunal de Justiça do Estado do Amapá, estando envolvido no desenvolvimento e
-                        implementação de aplicações back-end e front-end do sistema jurídico, aplicando práticas de programação modernas para
+                        implementação de aplicações back-end e front-end do sistema jurídico, aplicando práticas de
+                        programação modernas para
                         atender às demandas específicas da empresa.</p>
                     <p class="descricao-experiencia"><strong>Competências</strong>: API REST · JPA (Java Persistence
                         API) · Postman API ·
@@ -410,7 +409,7 @@
 
                 </div>
 
-                <div class="container container-experiencia" data-aos="slide-left"> <!-- SEGUNDO CONTAINER -->
+                <div class="container container-experiencia" data-aos="slide-left" data-aos-duration="700"> <!-- SEGUNDO CONTAINER -->
 
                     <h2 class="titulo-experiencias"><strong><a
                                 href="https://www.linkedin.com/company/universidade-federal-do-amapá-unifap/"
@@ -418,7 +417,7 @@
                                     class="bi bi-mortarboard-fill"></i>Universidade Federal do Amapá</a></strong></h2>
                     <br>
                     <p class="descricao-experiencia"><strong>Função</strong>: Atua como estudante de Bacharelado em
-                        Ciência da Computação na Unifap, atualmente está no 8°
+                        Ciência da Computação na Unifap, atualmente está no 9°
                         semestre.</p>
                     <p class="descricao-experiencia"><strong>Competências</strong>: Programação · Desenvolvimento de
                         Software · Banco de
@@ -454,7 +453,7 @@
 
                     <div class="carousel-inner" data-aos="fade-in" data-aos-delay="200">
 
-                        <!----- PRIMEIRO CARD / PLANTEL LIVERPOOL ----->
+                        <!----- CARD / PLANTEL LIVERPOOL ----->
 
                         <div class="carousel-item active">
 
@@ -491,7 +490,7 @@
 
                         </div>
 
-                        <!----- SEGUNDO CARD / WEBSCRAPING ----->
+                        <!----- CARD / WEBSCRAPING ----->
 
                         <div class="carousel-item">
 
@@ -581,16 +580,20 @@
 
                                         <h5 class="card-title">Automação de consulta jurídica</h5> <br>
 
-                                        <a href="https://github.com/26Tassiofernandes/automacao-consulta-juridica" target="_blank"
-                                            rel="external" class="btn btn-primary" style="width: 100%;">Visitar</a>
+                                        <a href="https://github.com/26Tassiofernandes/automacao-consulta-juridica"
+                                            target="_blank" rel="external" class="btn btn-primary"
+                                            style="width: 100%;">Visitar</a>
                                         <br><br>
-                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card-consulta-juridica"
-                                            role="button" aria-expanded="false" aria-controls="collapseExample"
-                                            style="width: 100%;">Ver descrição</a>
+                                        <a class="btn btn-primary" data-bs-toggle="collapse"
+                                            href="#descricao-card-consulta-juridica" role="button" aria-expanded="false"
+                                            aria-controls="collapseExample" style="width: 100%;">Ver descrição</a>
 
                                         <div class="collapse" id="descricao-card-consulta-juridica"> <br>
 
-                                            <p class="card-text">Este é um projeto destinado a automatizar operações de pesquisa jurídica, melhorando a eficácia em tarefas diárias e simplificando processos de consulta no âmbito jurídico.<p>
+                                            <p class="card-text">Este é um projeto destinado a automatizar operações de
+                                                pesquisa jurídica, melhorando a eficácia em tarefas diárias e
+                                                simplificando processos de consulta no âmbito jurídico.
+                                            <p>
 
                                         </div>
 
@@ -602,7 +605,7 @@
 
                         </div>
 
-                        <!--  TERCEIRO / PROJETO TERROR -->
+                        <!--  CARD / PROJETO TERROR -->
 
                         <div class="carousel-item">
 
@@ -640,7 +643,44 @@
 
                         </div>
 
-                        <!---- QUARTO / TELA DE LOGIN ---->
+                        <!--  CARD / WEBSITE PETSHOP -->
+
+                        <div class="carousel-item">
+
+                            <div class="col-12 mx-auto w-75">
+
+                                <div class="card">
+
+                                    <img src="src/images/petshop-website.png" alt="Terceiro card"
+                                        class="card-img-top img-fluid">
+
+                                    <div class="card-body">
+
+                                        <h5 class="card-title">Petshop Website</h5> <br>
+
+                                        <a href="https://petshopdev-omega.vercel.app/" target="_blank" rel="external"
+                                            class="btn btn-primary" style="width: 100%;">Visitar</a>
+                                        <br><br>
+                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#descricao-card"
+                                            role="button" aria-expanded="false" aria-controls="collapseExample"
+                                            style="width: 100%;">Ver descrição</a>
+
+                                        <div class="collapse" id="descricao-card"><br>
+
+                                            <p class="card-text">Um site moderno e funcional de um pet shop feito com
+                                                Next e Tailwind.</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!---- CARD / TELA DE LOGIN ---->
 
                         <div class="carousel-item">
 
@@ -678,7 +718,7 @@
 
                         </div>
 
-                        <!---- QUINTO / PROJETO X-MEN ---->
+                        <!---- CARD / PROJETO X-MEN ---->
 
                         <div class="carousel-item">
 
@@ -715,7 +755,7 @@
 
                         </div>
 
-                        <!---- SEXTO CARD / MINI PORTFÓLIO ---->
+                        <!----  CARD / MINI PORTFÓLIO ---->
 
                         <div class="carousel-item">
 
@@ -789,7 +829,7 @@
                             </div>
 
                         </div>
-         
+
 
                         <!--- SETAS DO CARROSSEL --->
 
@@ -840,13 +880,13 @@
                     <!-- A classe img-fluid deixa a imagem responsiva e adaptável para diferentes tipos de tela -->
                     <img class="img-fluid mx-auto d-block" data-aos="slide-right"
                         style="border-radius: 50%; width: 300px; padding: 20px;" src="src/images/foto-contato.png"
-                        alt="Imagem ilustrativa de contato">
+                        alt="Imagem ilustrativa de contato" data-aos-duration="700">
 
                 </div>
 
                 <!-- CONSTRUINDO O FORMULÁRIO -->
 
-                <div class="col-md-6" data-aos="slide-left">
+                <div class="col-md-6" data-aos="slide-left" data-aos-duration="700">
 
                     <!-- Usei o  Formspree como serviço de formulário de email -->
 
@@ -919,7 +959,7 @@
 
             <div class="informacoes-copyright">
 
-                <p class="descricao-footer" style="text-align: center;">Copyright © 2024, Tássio Fernandes. All Rights
+                <p class="descricao-footer" style="text-align: center;">Copyright © 2025, Tássio Fernandes. All Rights
                     Reserved</p>
 
             </div>
@@ -928,9 +968,10 @@
 
     </footer>
 
-    <a id="botao-voltar-home" href="#"><i style="color: var(--cor-primaria);" class="bi bi-arrow-up-circle-fill"></i></a>
+    <a id="botao-voltar-home" href="#"><i style="color: var(--cor-primaria);"
+            class="bi bi-arrow-up-circle-fill"></i></a>
 
-    
+
 
     <script src="src/JS/script.js"></script>
 </body>
